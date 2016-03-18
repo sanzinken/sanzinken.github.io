@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Tahoma Regular";
+  src:url(../font/Tahoma.ttf);
+}
+body {
+  font-family: "Tahoma Regular";
+  background-color: black;
+  color: white;
+}
+
+.wrapper {
+  width: 825px;
+  height: 885px;
+  background-image: url(../img/background_bonus_Mod3.jpg);
+  /*background-size: cover;*/
+  margin: auto;
+  padding-top: 57px;
+  padding-left: 67px;
+  padding-right: 67px;
+  padding-bottom: 31px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+/*HEADER*/
+header{
+  margin-top: 93px;
+  padding-bottom: 15px;
+}
+h1.header-slogan{
+  font-size: 14px;
+  margin-top: 9px;
+}
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.header-logo {
+  float: left;
+}
+.header-contact{
+  float: right;
+}
+#palm-img {
+  position: absolute;
+  z-index: 10;
+  left: 205px;
+  top: 78px
+}
+.contact{
+  font-size: 14px;
+}
+.contact-phone, .contact-mail{
+  font-size: 11px;
+}
+.contact-phone{
+  padding-top: 8px;
+}
+.contact-mail{
+  padding-top: 4px;
+  margin-bottom: 15px;
+}
+/*MAIN*/
+.country-title{
+  
+}
+li {
+  display: inline-block;
+}
+li>img:hover{
+   box-shadow: 0 0 2px 3px rgba(251,252,202,0.7);
+}
+.main-bottom{
+  margin-top: 67px;
+}
+/*FOOTER*/
+footer{
+  margin-top: 150px;
+
+}

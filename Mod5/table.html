@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///home/l3xx/Git/GoIT/GoIT-Frontend_HW/Mod5/table.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <style media="screen">
+        table {
+            border-collapse: collapse;
+            width: 250px;
+        }
+        td {
+            width: 30px;
+            height: 30px;
+            border: 2px solid black;
+        }
+        tr {
+            height: 30px;
+        }
+        .red {
+            background-color: red;
+        }
+        .gold {
+            background-color: gold;
+        }
+        .grey {
+            background-color: darkslategrey;
+        }
+        .blue{
+            background-color: #638FF0;
+        }
+        .black{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="3"></td>
+                <td colspan="2" class="gold"></td>
+            </tr>
+            <tr>
+                <td rowspan="2"></td>
+                <td colspan="4" rowspan="4" class="red"></td>
+                <td rowspan="2" class="gold" colspan="2"></td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td rowspan="3"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2" class="grey"></td>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="gold"></td>
+                <td colspan="2"></td>
+                <td colspan="2" rowspan="2" class="blue"></td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2"></td>
+                <td colspan="2" class="black"></td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

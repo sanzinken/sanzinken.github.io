@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="font, forms, opacity, css, html">
+    <meta name="description" content="Some page with fonts, forms and opacity">
+    <title>Mod5</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Meu YouBike</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Cantato</a></li>
+                <li><a href="#">Ajunda</a></li>
+            </ul>
+            <ul class="login">
+                <li>
+                  <div class="stick"></div>
+                </li>
+                <li  class="flag">
+                  <img src="img/flag.png" alt="flag"/>
+                </li>
+                <li>
+                    Minhas Ofertas</li>
+                <li class="enter">
+                    Ola! <a href="#">Entar</a> ou <a href="#">Cadastre-se</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="opacity-block">
+            <div class="pre-wrapper-main"><span>Cadastre-se</span></div>
+          <div class="wrapper-main">
+            <a class="fb"><span class="fb-logo">f</span><span class="fb-invite">Log In <span class="fb-with">with</span> Facebook</span></a>
+            <div class="ou-wrapper">
+                <div class="ou">
+                    ou
+                </div>
+            </div>
+            <form action="index.html" class="registration" method="post">
+                <input type="text" name="f-name" placeholder="First Name" required class="log-form">
+                <input type="text" name="l-name" placeholder="Last Name" required class="log-form">
+                <input type="email" name="e-mail" placeholder="Email Address" required  class="log-form">
+                <input type="password" name="choose-password" placeholder="Chosse Password" class="log-form" required>
+                <input type="password" name="confirm-password" placeholder="Confirm Password" class="log-form" required>
+                <input type="checkbox" name="send-updates" id="upd" class="log-form-chkbox">
+                <label for="upd">Send me Youbike updates and tips</label>
+                <input type="submit" name="create-account" value="Create my Account" class="log-form button-submit">
+            </form>
+            <div class="privacy">By clicking the button above, you agree to the Terms of Service. Xiew our Privacy Policy.</div>
+          </div>
+        </div>
+    </main>
+</body>
+</html>
