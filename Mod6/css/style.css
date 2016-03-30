@@ -722,6 +722,12 @@ main ul li:nth-child(n+3) .price {
 .img-wrap img {;
     margin-top: 5px;
 }
+.tire:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+     transition:all 0.5s ease;
+}
 /*****************ASIDE***right*****************/
 #right .sidehead{
     margin-left: 10px;
@@ -802,7 +808,7 @@ main ul li:nth-child(n+3) .price {
     height: 100px;
     width: auto;
     padding-left: 299px;
-    padding-top: 12px;
+    padding-top: 10px;
 }
 #about{
 }
@@ -829,4 +835,7 @@ main ul li:nth-child(n+3) .price {
 #site-vendor{
     font-size: 10px;
     color: #7f4740;
+    margin-left: 79px;
+    margin-top: 9px;
+    letter-spacing: 0.03em;
 }
