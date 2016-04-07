@@ -1,0 +1,12 @@
+body {
+    width: 100%;
+}
+
+header{
+    height: 200px;
+    background: url(../img/background.jpg);
+}
+
+.wrapper {
+    width: 980px;
+}
