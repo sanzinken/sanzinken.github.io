@@ -30,18 +30,18 @@ body{
 
 .content-wrapper{
     margin: 0 auto;
-    width: 792px;
+    width: 777px;
 }
 
 header {
     background: url('../img/background.jpg');
-    padding-top: 1.7%;
+    padding-top: 33px;
 }
 
 .logo-name{
     font-family: "Legue Gothic Regular";
     text-transform: uppercase;
-    font-size: 2.6em;
+    font-size: 2.5em;
     font-weight: 100;
     color: white;
 }
