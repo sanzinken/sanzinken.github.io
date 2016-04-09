@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Legue Gothic Regular";
+    src: url(../fonts/leaguegothic-regular.eot);
+}
+@font-face {
+    font-family: "MyriadPro Regular"
+    src:url(../fonts/MyriadProRegular.eot);
+}
+body{
+    font-family:"MyriadPro Regular", Arial, sans-serif;
+    font-size:16px;
+}
+.wrapper {
+    width: 66%;
+    margin: 0 auto;
+}
+.content-wrapper{
+
+}
