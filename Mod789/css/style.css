@@ -1,19 +1,63 @@
 @font-face {
     font-family: "Legue Gothic Regular";
-    src: url(../fonts/leaguegothic-regular.eot);
+    src: url('../fonts/LeagueGothic/LeagueGothicRegular.eot');
+    src: url('../fonts/LeagueGothic/LeagueGothicRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/LeagueGothic/LeagueGothicRegular.woff') format('woff'),
+    url('../fonts/LeagueGothic/LeagueGothicRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: "MyriadPro Regular"
-    src:url(../fonts/MyriadProRegular.eot);
+    src :url('../fonts/MyriadPro/MyriadProRegular.eot');
+    src: url('../fonts/MyriadPro/MyriadProRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MyriadPro/MyriadProRegular.woff') format('woff'),
+    url('../fonts/MyriadPro/MyriadProRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 body{
-    font-family:"MyriadPro Regular", Arial, sans-serif;
+    font-family:Arial, sans-serif;
     font-size:16px;
 }
+
+
+
 .wrapper {
-    width: 66%;
+    width: 68%;
     margin: 0 auto;
 }
-.content-wrapper{
 
+.content-wrapper{
+    margin: 0 auto;
+    width: 792px;
+}
+
+header {
+    background: url('../img/background.jpg');
+    padding-top: 1.7%;
+}
+
+.logo-name{
+    font-family: "Legue Gothic Regular";
+    text-transform: uppercase;
+    font-size: 2.6em;
+    font-weight: 100;
+    color: white;
+}
+
+.logo-name--decor{
+    font-family: "Legue Gothic Regular";
+
+    background: rgba(116,80,131,1);
+background: -moz-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(116,80,131,1)), color-stop(100%, rgba(50,37,57,1)));
+background: -webkit-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+background: -o-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+background: -ms-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+background: linear-gradient(to bottom, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', endColorstr='#322539', GradientType=0 );
+color: transparent;
+-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
