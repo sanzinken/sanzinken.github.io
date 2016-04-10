@@ -21,7 +21,11 @@ body{
     font-size:16px;
 }
 
-
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
 .wrapper {
     width: 68%;
@@ -35,6 +39,7 @@ body{
 
 header {
     background: url('../img/background.jpg');
+    background-position: center;
     padding-top: 33px;
 }
 
@@ -44,6 +49,7 @@ header {
     font-size: 2.5em;
     font-weight: 100;
     color: white;
+    float: left;
 }
 
 .logo-name--decor{
@@ -60,4 +66,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 color: transparent;
 -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+nav {
+    float:left;
+}
+
+.menu__item {
+    display: inline-block;
+    text-decoration: none;``
+}
+
+.item__link {
+    font-family: "Legue Gothic Regular";
+    color: white;
+    text-decoration: none;
 }
