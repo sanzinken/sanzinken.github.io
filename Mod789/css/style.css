@@ -57,6 +57,7 @@ body{
 header {
     background: url('../img/background.jpg') no-repeat 0 0;
     background-position: center;
+    padding-bottom: 60px;
 }
 
 .logo-name{
@@ -189,15 +190,13 @@ nav {
 
 .bullet-container {
 margin-left: 59%;
-width: 10%;
-height: 10%;
+width: 180px;
 margin-top: 100px;
-margin-bottom: 60px;
 }
 
 .bullet{
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
     border-radius: 44%;
     display: inline-block;
     margin-right: 10%;
@@ -206,11 +205,11 @@ margin-bottom: 60px;
 }
 
 .bullet-inner {
-    width:10px;
-    height: 10px;
+    width:12px;
+    height: 12px;
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 3px;
+    left: 3px;
     background-color: white;
     border-radius: 50%;
 }
