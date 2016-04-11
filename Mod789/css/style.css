@@ -8,11 +8,21 @@
     font-style: normal;
 }
 @font-face {
-    font-family: "MyriadPro Regular"
+    font-family: "MyriadPro Regular";
     src :url('../fonts/MyriadPro/MyriadProRegular.eot');
     src: url('../fonts/MyriadPro/MyriadProRegular.eot?#iefix') format('embedded-opentype'),
     url('../fonts/MyriadPro/MyriadProRegular.woff') format('woff'),
     url('../fonts/MyriadPro/MyriadProRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "MyriadProLight";
+    src :url('../fonts/MyriadPro_light/myriadpro-light-webfont.eot');
+    src: url('../fonts/MyriadPro_light/myriadpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MyriadPro_light/myriadpro-light-webfont.woff') format('woff'),
+    url('../fonts/MyriadPro_light/myriadpro-light-webfont.ttf') format('truetype'),
+    url('../fonts/MyriadPro_light/myriadpro-light-webfont.svg#MyriadProLight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -37,10 +47,17 @@ body{
     width: 782px;
 }
 
+.content-wrapper--header {
+    padding-top: 1.7%;
+    padding-bottom: 6.8%;
+}
+
+
+
 header {
     background: url('../img/background.jpg');
+    padding-bottom: -29px;
     background-position: center;
-    padding-top: 33px;
 }
 
 .logo-name{
@@ -97,4 +114,68 @@ nav {
 
 .head--menu__item:hover{
     border-bottom:  1px solid #edbfff;
+}
+
+.section-wrapper{
+    background: rgba(50, 50, 50, 0.5);
+}
+
+.content-wrapper--slider{
+    width: 50%;
+    padding-top: 2em;
+    float: left;
+
+}
+.slider__content h2 {
+    font-family: "Legue Gothic Regular";
+    font-size: 2.9em;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: -0.01em;
+}
+
+.slider__content h3 {
+    font-family: "Legue Gothic Regular";
+    font-size: 1.6em;
+    text-transform: uppercase;
+    color:  #edbfff;
+    letter-spacing: -0.015em;
+}
+
+.slider__content p {
+    font-family: "MyriadProLight";
+    font-size: 1em;
+    color: #dedede;
+    margin-top: 0.5em;
+}
+
+.image-wrapper {
+    float: right;
+    width: 50%;
+}
+
+.slider__image {
+    position: relative;
+    outline: 2px solid #00ddd6 ;
+    width: 20%;
+}
+
+.image__phone {
+    display: block;
+    position: absolute;
+}
+
+.image__phone--blur {
+    width: 100%
+    z-index: 1;
+}
+
+.image__phone--sharp {
+    z-index: 10;
+    width: 100%
+}
+
+.image__phone--play {
+    width: 30%;
+    z-index: 20;
 }
