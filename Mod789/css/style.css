@@ -36,6 +36,7 @@ header {
     text-align: center;
     padding-bottom: 21.875%;
     border-bottom:  1px solid #262526;
+    background-position: center;
 }
 
 .clearfix::after {
