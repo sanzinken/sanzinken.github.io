@@ -36,7 +36,8 @@ header {
     text-align: center;
     padding-bottom: 21.875%;
     border-bottom:  1px solid #262526;
-    background-position: center;
+    background-position: top;
+    margin: 0 auto;
 }
 
 .clearfix::after {
@@ -47,7 +48,7 @@ header {
 
 .container {
     width: 69.7368421%;
-    margin: 0% auto 0;
+    margin: 0 auto ;
 }
 
 .header {
@@ -77,12 +78,14 @@ header {
     border-bottom:  2px solid #d899e8;
 }
 
+
 .menu__item:nth-child(1n+2) {
     display: none;
 }
 
 .menu__item:hover{
     display: block;
+    background: rgba(30, 40, 100, 0.5);
 }
 
 .slider {
@@ -152,4 +155,76 @@ header {
     border-radius: 3px;
     margin-top: 15%;
     margin-left: 20%;
+}
+
+.description-company {
+    background: rgba(116,80,131,1);
+    background: -moz-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(116,80,131,1)), color-stop(100%, rgba(50,37,57,1)));
+    background: -webkit-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+    background: -o-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+    background: -ms-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+    background: linear-gradient(to bottom, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', endColorstr='#322539', GradientType=0 );
+}
+
+.section-content {
+    float: left;
+    vertical-align: text-top;
+    position: relative;
+    padding-top: 3%;
+    padding-left: 10%;
+}
+
+.img-content {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    left: -30px;
+}
+
+.img-content--tool {
+    background: url(../img/sprite_icon.png) -2px -48px no-repeat;
+}
+
+.img-content--dialog {
+    background: url(../img/sprite_icon.png) -2px -48px no-repeat;
+}
+
+.img-content--note {
+    background: url(../img/sprite_icon.png)-2px -48px no-repeat;
+}
+
+.text-content {
+    font-family:  "MyriadPro Regular";
+    font-size: 1em;
+    color: white;
+    text-shadow: 1px 1px  #000;
+    width: 95%;
+    display: inline-block;
+    line-height:  1.5625em;
+}
+
+.text-content h3 {
+    font-family: "Legue Gothic Regular";
+    font-size: 1.25em;
+    text-shadow: 1px 1px 1px #000;
+    text-transform: uppercase;
+    color: white;
+}
+
+.read-more-link {
+    font-family: "Legue Gothic Regular";
+    font-size: 1em;
+    text-shadow: 1px 1px 1px #000;
+    text-decoration: none;
+    color: white;
+    float: right;
+}
+
+.read-more-link:hover {
+    -webkit-box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.63);
+    -moz-box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.63);
+    box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.63);
 }
