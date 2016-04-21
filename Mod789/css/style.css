@@ -32,7 +32,8 @@ body{
 }
 
 header {
-    background: url(../img/background_320px.jpg) no-repeat;
+    background: url(../img/background.jpg) no-repeat;
+    text-align: center;
     text-align: center;
     padding-bottom: 21.875%;
     border-bottom:  1px solid #262526;
@@ -227,4 +228,8 @@ header {
     -webkit-box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.63);
     -moz-box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.63);
     box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.63);
+}
+
+.updates-section {
+    background-color: #f9f9f9;
 }
