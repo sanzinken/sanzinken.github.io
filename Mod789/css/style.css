@@ -16,6 +16,16 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "MyriadProBold";
+    src :url('../fonts/MyriadProBold/myriad-pro-bold.eot');
+    src: url('../fonts/MyriadProBold/myriad-pro-bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MyriadProBold/myriad-pro-bold.woff') format('woff'),
+    url('../fonts/MyriadProBold/myriad-pro-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 @font-face {
     font-family: "MyriadProLight";
     src :url('../fonts/MyriadPro_light/myriadpro-light-webfont.eot');
@@ -41,6 +51,8 @@ header {
     margin: 0 auto;
 }
 
+
+
 .clearfix::after {
     content: "";
     display: block;
@@ -58,7 +70,6 @@ header {
     text-transform: uppercase;
     color: white;
     padding-top: 21.5%;
-
 }
 
 .header--ER {
@@ -84,7 +95,7 @@ header {
     display: none;
 }
 
-.menu__item:hover{
+.menu__item:hover<ul{
     display: block;
     background: rgba(30, 40, 100, 0.5);
 }
@@ -101,9 +112,13 @@ header {
     height: 40px;
 }
 
+.arrow--left {
+    left:5px
+}
+
 .arrow--right {
-    left: 90.625%;
     background: url(../img/sprite_icon.png) -43px 0 no-repeat;
+    right: 3px;;
 }
 
 
@@ -154,8 +169,8 @@ header {
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(209,209,209,1) 96%, rgba(219,219,219,1)    100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb',    GradientType=0 );
     border-radius: 3px;
-    margin-top: 15%;
-    margin-left: 20%;
+    margin-top: 2px;
+    margin-left:2px;
 }
 
 .description-company {
@@ -170,11 +185,17 @@ header {
 }
 
 .section-content {
-    float: left;
-    vertical-align: text-top;
     position: relative;
     padding-top: 3%;
-    padding-left: 10%;
+    padding-left: 15.6862745%;
+}
+
+.section-content--left {
+    float: left;
+}
+
+.float-content-wrapper{
+    padding-bottom: 50px;
 }
 
 .img-content {
@@ -184,7 +205,20 @@ header {
     position: absolute;
     left: -30px;
 }
-
+.header--content {
+    color: #454545;
+    text-shadow: 1px -1px  #a8a8a8;
+    font-size: 1.1875em;
+    padding: 0;
+}
+.pink{
+    color: #edbfff;
+    text-shadow: 1px -1px  #f4d4fc;
+    line-height: 1.5em;
+}
+.pers-opinion {
+    background-color: white;
+}
 .img-content--tool {
     background: url(../img/sprite_icon.png) -2px -48px no-repeat;
 }
@@ -198,13 +232,22 @@ header {
 }
 
 .text-content {
-    font-family:  "MyriadPro Regular";
+    font-family:  "MyriadProLight";
     font-size: 1em;
-    color: white;
-    text-shadow: 1px 1px  #000;
+
     width: 95%;
     display: inline-block;
     line-height:  1.5625em;
+}
+
+.text-content--decoration {
+    color: white;
+    text-shadow: 1px 1px  #000;
+}
+
+.update-content--decoration {
+    color: #3a3b3c;
+
 }
 
 .text-content h3 {
@@ -230,6 +273,134 @@ header {
     box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.63);
 }
 
+.reply-section {
+    background-color: white;
+    -webkit-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.5);
+    box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.5);
+}
+.reply-section img {
+    position: absolute;
+    top: 7%;
+    left: -12%;
+}
+.bullet-container--updates {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 25px;
+}
 .updates-section {
     background-color: #f9f9f9;
+    padding-top: 71px;
+}
+
+/*section RECENT UPDATES*/
+
+.section-content--blogs {
+    padding-left: 23px;
+    padding-right: 46px;
+}
+
+.header-updates {
+    font-family: "Legue Gothic Regular";
+    font-size: 1.875em;
+    text-transform: uppercase;
+    color: #454545;
+}
+
+.blog-updates-list {
+    width: 125.4716981%;
+    padding-top: 28px;
+}
+
+.text-content--blog {
+    font-family: "MyriadProLight";
+}
+
+.read-more-link--blog {
+    font-size: 1.125em;
+    color: #454545;
+    text-shadow: none;
+    padding-top: 1.5625em;
+}
+
+.blogs-post-content {
+    position: relative;
+    margin-left: 70px;
+    padding-bottom: 2.5em;
+}
+
+.blogs-post-content:last-child {
+    padding-bottom: 0;
+}
+
+
+
+.blogs-post-content h4 {
+    font-family: "MyriadProBold"
+}
+
+.img-content-updates {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-image: url(../img/back_icon.jpg);
+    left: -70px;
+}
+
+/*section BRANDS*/
+
+.brand-section {
+    background: #f9f9f9;
+
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+}
+.brands{
+    padding: 0 2% 0 7%;
+}
+
+.brand-list{
+    float: left;
+    background-image: url(../img/brand_sprite.png);
+    height: 65px;
+    background-repeat: no-repeat;
+    width:107px;
+    margin: 5% 5% 5% 5%;
+}
+
+.brand-list--img1 {
+    background-position: 15px;
+}
+
+.brand-list--img2 {
+    background-position: -118px 0;
+}
+
+.brand-list--img3 {
+    background-position: -254px 0;
+}
+
+.brand-list--img4 {
+    background-position: -382px;
+}
+
+.brand-list--img5 {
+    background-position: -526px 0;:
+}
+
+.brand-list--img6 {
+    background-position: -681px;
+}
+
+/*<<<<<<<<<<<<<FOOTER>>>>>>>>>>>>>>>>*/
+
+.footer-block{
+    display: none;
+}
+
+.footer-menu {
+    display: none;
 }
