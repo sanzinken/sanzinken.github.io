@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
@@ -21,12 +21,17 @@
 
                         <nav  class="header-nav-menu">
                             <ul class="menu menu--head">
-                                <li class="menu__item"><a href="#"     class="menu__link">home</a></li>
-                                <li class="menu__item"><a href="#"     class="menu__link">about</a></li>
-                                <li class="menu__item"><a href="#"     class="menu__link">blogs</a></li>
-                                <li class="menu__item"><a href="#"     class="menu__link">product</a></li>
-                                <li class="menu__item"><a href="#"     class="menu__link">lorem</a></li>
-                                <li class="menu__item"><a href="#"     class="menu__link">ipsum</a></li>
+                                <li class="menu__item menu__item--submenu">
+                                    <a href="#"     class="menu__link menu__link--mainpage">home</a>
+                                    <ul class="header-nav-submenu">
+                                        <li class="menu__item submenu__item"><a href="#"     class="menu__link">about</a></li>
+                                        <li class="menu__item submenu__item"><a href="#"     class="menu__link">blogs</a></li>
+                                        <li class="menu__item submenu__item"><a href="#"     class="menu__link">product</a></li>
+                                        <li class="menu__item submenu__item"><a href="#"     class="menu__link">lorem</a></li>
+                                        <li class="menu__item submenu__item"><a href="#"     class="menu__link">ipsum</a></li>
+                                    </ul>
+                                </li>
+
                             </ul>
                         </nav>
 
@@ -217,7 +222,7 @@
                 </div>
 
                 <div class="footer_320px">
-                    <p class="design_text">Designed by <strong>Pingbull AS</strong></p>
+                    <p class="design_text">Designed by <strong class="design_text--bold">Pingbull AS</strong></p>
                 </div>
 
             </div>
