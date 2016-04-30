@@ -116,19 +116,30 @@ header {
 
     .menu__item--submenu:hover {
     background-color: rgba(62, 50, 71, 0.9);
-    border-radius: 10px 10px 0px 0px;
     -moz-border-radius: 10px 10px 0px 0px;
     -webkit-border-radius: 10px 10px 0px 0px;
     border: 1px solid #000;
-    border-bottom: none;
+    border-bottom: 0px solid #36283e;
 }
 
 .menu__item--submenu:hover > a {
     text-shadow: 0 0 3px white;
+    border-bottom:  2px solid #d899e8;
+}
+.submenu__item:hover >a {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px solid  #d899e8;
+    height: 98%;
+    margin-bottom: -2px;
 }
 
 .submenu__item:last-child:hover{
     border-radius: 0 0 10px 10px;
+}
+
+.submenu__item:last-child:hover > a{
+    width: 90%;
 }
 
 .submenu__item{
