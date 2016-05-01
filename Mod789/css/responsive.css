@@ -1,0 +1,8 @@
+@media screen and (min-width:480px) and (max-width: 767px) {
+
+    .container {
+        width: 89.5833333%;
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+
+}
