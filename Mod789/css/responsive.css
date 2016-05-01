@@ -5,4 +5,55 @@
         background-color: rgba(255, 0, 0, 0.5);
     }
 
+    .header-nav-menu {
+        width: 58.1395349%;
+        margin: 0 auto;
+    }
+    .slider {
+        height: 245px;
+        background: rgba(50, 50, 50, 0.5);
+    }
+
+    .slider-content {
+        width: 47.511628%;
+        float: left;
+        margin-top: 90px;
+        margin-left: 2%;
+    }
+
+    .image-wrapper{
+        display: block;
+    }
+
+    .image__phone {
+        position: absolute;
+    }
+
+    .image__phone--blur {
+        top: 2px;
+        height: 63.2653061%;
+        right: 66px;
+    }
+
+    .image__phone--sharp {
+        top: -7px;
+        height: 110.0%;
+        right: 31px;
+    }
+
+    .image__phone--play {
+        top: 39%;
+        height: 22.4489796%;
+        right: 14%;
+    }
+
+
+}
+
+@media screen and (min-width:768px) and (max-width: 959px) {
+
+    .container {
+        background-color:  rgba(255, 103, 65, 0.66);
+    }
+
 }
