@@ -172,25 +172,26 @@ header {
     width: 95%;
     position: relative;
     margin: 0 auto;
+    background: rgba(50, 150, 50, 0.5);
+    height: 100%;
 }
 
 .arrow {
     position: absolute;
-    background: url(../img/sprite_icon.png) 0 0 no-repeat;
     width: 37px;
     height: 40px;
     cursor: pointer;
+    top: 40%;
 }
 
 .arrow--left {
     left:5px;
-    top: 40%;
+    background:url(../img/sprite_icon.png) 0 0 no-repeat;
 }
 
 .arrow--right {
     background: url(../img/sprite_icon.png) -43px 0 no-repeat;
-    right: 3px;
-    top: 40%;;
+    right: 3px;;
 }
 
 

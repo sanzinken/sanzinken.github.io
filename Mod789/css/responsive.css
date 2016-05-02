@@ -27,6 +27,7 @@
 
     .image-wrapper{
         display: block;
+        margin-right: 20%;
     }
 
     .image__phone {
@@ -37,7 +38,8 @@
         right: 23%;
         float: right;
         height: 63.2653061%;
-        top: 36px;;
+        top: 36px;
+        margin-right: 8%;;
     }
 
     .image__phone--sharp {
