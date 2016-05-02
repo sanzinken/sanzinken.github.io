@@ -94,6 +94,7 @@ header {
     border: 1px solid black;
     left: -1px;
     border-top: none;
+    top: 37px;
 }
 
 .header-nav-submenu:last-child{
@@ -119,7 +120,7 @@ header {
     -moz-border-radius: 10px 10px 0px 0px;
     -webkit-border-radius: 10px 10px 0px 0px;
     border: 1px solid #000;
-    border-bottom: 0px solid #36283e;
+    border-bottom: 1px solid #36283e;
 }
 
 .menu__item--submenu:hover > a {
@@ -164,7 +165,7 @@ header {
 }
 
 .slider {
-    margin-top: 130px;
+    margin-top: 20px;
     position: relative;
 }
 
@@ -176,12 +177,14 @@ header {
 }
 
 .arrow--left {
-    left:5px
+    left:5px;
+    top: 40%;
 }
 
 .arrow--right {
     background: url(../img/sprite_icon.png) -43px 0 no-repeat;
-    right: 3px;;
+    right: 3px;
+    top: 45%;;
 }
 
 
@@ -266,7 +269,7 @@ header {
     height: 30px;
     display: inline-block;
     position: absolute;
-    left: -30px;
+    left: 30px;
 }
 .header--content {
     color: #454545;
@@ -288,6 +291,14 @@ header {
 
 .img-content--dialog {
     background: url(../img/sprite_icon.png) -2px -48px no-repeat;
+}
+
+.img-content--note {
+    background: url(../img/sprite_icon.png) -2px -48px no-repeat;
+}
+
+.img-content--dialog {
+    background: url(../img/sprite_icon.png) 2px -48px no-repeat;
 }
 
 .img-content--note {
@@ -344,8 +355,8 @@ header {
 }
 .reply-section img {
     position: absolute;
-    top: 7%;
-    left: -12%;
+    top: 10px;
+    left: -25px;
 }
 .bullet-container--updates {
     margin: 0 auto;

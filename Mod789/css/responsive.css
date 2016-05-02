@@ -5,6 +5,10 @@
         background-color: rgba(255, 0, 0, 0.5);
     }
 
+    header {
+        padding-bottom: 35px;
+    }
+
     .header-nav-menu {
         width: 58.1395349%;
         margin: 0 auto;
@@ -30,23 +34,28 @@
     }
 
     .image__phone--blur {
-        top: 2px;
+        right: 23%;
+        float: right;
         height: 63.2653061%;
-        right: 66px;
+        top: 36px;;
     }
 
     .image__phone--sharp {
-        top: -7px;
-        height: 110.0%;
-        right: 31px;
+        height: 110%;
+        float: right;
+        top: -10px;
     }
 
     .image__phone--play {
-        top: 39%;
         height: 22.4489796%;
-        right: 14%;
+        float: right;
+        margin-left: 40px;
+        margin-top: 93px;;
     }
 
+    .bullet-container {
+        margin-top: 25px;
+    }
 
 }
 
@@ -57,3 +66,9 @@
     }
 
 }
+
+@media screen and (min-width:960px){
+
+    .container {
+        background-color:  rgba(255, 103, 250, 0.66);
+    }
