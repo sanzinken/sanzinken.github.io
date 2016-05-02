@@ -72,3 +72,8 @@
     .container {
         background-color:  rgba(255, 103, 250, 0.66);
     }
+
+    .slider__arrow__wrapper {
+        width: 75%;
+    }
+}
