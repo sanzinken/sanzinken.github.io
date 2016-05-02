@@ -185,13 +185,13 @@ header {
 }
 
 .arrow--left {
-    left:5px;
     background:url(../img/sprite_icon.png) 0 0 no-repeat;
 }
 
 .arrow--right {
     background: url(../img/sprite_icon.png) -43px 0 no-repeat;
-    right: 3px;;
+    right: -6px;
+    /* top: 44%; */;;
 }
 
 
@@ -262,7 +262,7 @@ header {
 
 .section-content {
     position: relative;
-    padding-left: 15.6862745%;
+    padding-left: 40px;
 }
 
 .section-content--left {
@@ -278,7 +278,8 @@ header {
     height: 30px;
     display: inline-block;
     position: absolute;
-    right: 86.5%;
+    float: left;
+    margin-left: -53px;
     /* margin-left: 80px; */;
 }
 .header--content {
@@ -363,6 +364,8 @@ header {
     -webkit-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.5);
     box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.5);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .reply-section img {
     position: absolute;
