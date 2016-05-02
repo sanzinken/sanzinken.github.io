@@ -52,12 +52,17 @@
         height: 22.4489796%;
         float: right;
         margin-left: 40px;
-        margin-top: 93px;;
+        margin-top: 93px;
     }
 
     .bullet-container {
         margin-top: 25px;
     }
+
+    .categories {
+        display: block;
+    }
+
 
 }
 
@@ -66,6 +71,9 @@
     .container {
         background-color:  rgba(255, 103, 65, 0.66);
     }
+    .categories {
+        display: block;
+    }
 
 }
 
@@ -73,6 +81,10 @@
 
     .container {
         background-color:  rgba(255, 103, 250, 0.66);
+    }
+
+    .categories {
+        display: block;
     }
 
     .slider__arrow__wrapper {
