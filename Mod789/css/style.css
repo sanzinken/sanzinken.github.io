@@ -454,7 +454,7 @@ header {
     padding-bottom: 20px;
 }
 .brands{
-    width: 85.7142857%;
+    width: 220px;
     margin: 0 auto;
 }
 
@@ -463,8 +463,8 @@ header {
     height: 65px;
     background-repeat: no-repeat;
     width:107px;
-    display: inline-block;
     margin-bottom: 60px;
+    display: inline-block;
 }
 
 .brand-list--img1 {
