@@ -263,7 +263,7 @@ header {
 
 .section-content {
     position: relative;
-    width: 79.2857143%;
+    width: 90%;
     padding-bottom: 20px;
     padding-left: 40px;
 }
@@ -389,7 +389,7 @@ header {
 
 .section-content--blogs {
     padding-bottom: 90px;
-    margin-left: 5px;
+    margin-left: 7%;
     width: 91%;
 }
 
@@ -465,7 +465,7 @@ header {
     background-repeat: no-repeat;
     width:107px;
     margin-bottom: 60px;
-    display: inline-block;
+    display: inline-block;;
 }
 
 .brand-list--img1 {
@@ -489,7 +489,7 @@ header {
 }
 
 .brand-list--img6 {
-    background-position: -669px;
+    background-position: -683px;
 }
 
 .categories {
@@ -547,6 +547,7 @@ footer {
     margin: 0 auto;
     background-color: DeepSkyBlue;
     margin-bottom: 40px;
+    display: none;
 }
 .menu__item--footer {
     float: left;
@@ -559,4 +560,5 @@ footer {
 
 .menu__link--footer {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
