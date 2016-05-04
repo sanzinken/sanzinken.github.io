@@ -275,6 +275,7 @@ header {
 
 .float-content-wrapper{
     padding-bottom: 50px;
+    padding-left: 20px;
 }
 
 .img-content {
@@ -388,8 +389,8 @@ header {
 
 .section-content--blogs {
     padding-bottom: 90px;
-    width: 91%;
     margin-left: 5px;
+    width: 91%;
 }
 
 .header-updates {
@@ -541,4 +542,21 @@ footer {
 
 .design_text--bold {
     font-family: "MyriadProBold";
+}
+.menu--footer {
+    margin: 0 auto;
+    background-color: DeepSkyBlue;
+    margin-bottom: 40px;
+}
+.menu__item--footer {
+    float: left;
+    margin-right: 25px;
+}
+.menu__item--footer:last-child{
+    margin-right: 0;
+}
+
+
+.menu__link--footer {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 }
