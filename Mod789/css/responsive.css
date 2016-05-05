@@ -2,7 +2,7 @@
 
     .container {
         width:91.6666667%;
-        background-color: rgba(255, 0, 0, 0.5);
+        background-color:rgba(255, 0, 0, 0.5);
     }
 
     header {
@@ -70,7 +70,7 @@
 
     .brands {
         width: 440px;
-        padding-left: 28px;
+        padding-left: 17%;
     }
 
     .menu--footer {
@@ -83,7 +83,67 @@
 
     .container {
         background-color:  rgba(255, 103, 65, 0.66);
+        width: 94.7916667%
     }
+
+    .header {
+        text-align: left;
+    }
+
+    .menu-drop {
+        display: none;
+    }
+
+    .menu-line{
+        display: block;
+    }
+
+    .menu__item--line {
+        display: inline-block;
+    }
+
+
+    .slider-content {
+        width: 47.511628%;
+        float: left;
+        margin-top: 90px;
+        margin-left: 2%;
+    }
+
+    .image-wrapper{
+        display: block;
+        margin-right: 20%;
+    }
+
+    .image__phone {
+        position: absolute;
+    }
+
+    .image__phone--blur {
+        right: 23%;
+        float: right;
+        height: 63.2653061%;
+        top: 36px;
+        margin-right: 8%;;
+    }
+
+    .image__phone--sharp {
+        height: 110%;
+        float: right;
+        top: -10px;
+    }
+
+    .image__phone--play {
+        height: 22.4489796%;
+        float: right;
+        margin-left: 40px;
+        margin-top: 93px;
+    }
+
+    .bullet-container {
+        margin-top: 25px;
+    }
+
     .categories {
         display: block;
     }

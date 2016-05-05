@@ -100,9 +100,6 @@ header {
 
 .header-nav-submenu:last-child{
     border-radius: 0 0 10px 10px;
-    /*border-left: 1px solid #000;
-    border-bottom: 1px solid #000;
-    border-right: 1px solid #000;*/
 }
 
 .submenu__item:hover {
@@ -163,6 +160,10 @@ header {
 
 .menu__link--mainpage{
     border-bottom:  2px solid #d899e8;
+}
+
+.menu-line {
+    display: none;
 }
 
 .slider {
