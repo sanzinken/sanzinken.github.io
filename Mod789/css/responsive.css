@@ -187,14 +187,15 @@
         width: 26%;
     }
     .text-content--decoration {
-        width: 57%;
+        width: 74%;
         font-size: 1em;
     }
 
     .read-more-link {
-        float: none;
-        padding-left: 75px;
+        float: right;
         line-height: 3em;
+        width: 36%;
+        margin-right: 17%;
     }
 
     .read-more-link:hover {
@@ -210,6 +211,27 @@
     .section-content--blogs {
         float: right;
         width: 45%;
+    }
+
+    .brands {
+        width: 100%;
+    }
+
+    .category{
+        width: 30%;
+        float: left;
+        padding-right: 5%;
+    }
+    .category:last-child{
+        padding-right: 0;
+    }
+
+    .menu--footer {
+        display: block;
+    }
+
+    .design_text {
+        float: right;
     }
 }
 
