@@ -171,16 +171,15 @@ header {
 }
 
 .slider__container {
-    width:90%;
+    width:98%;
     margin:0 auto;
     position:relative;
     height:100%;
 }
 .slider__arrow__wrapper {
-    width: 95%;
+    width: 98%;
     position: relative;
     margin: 0 auto;
-    background: rgba(50, 150, 50, 0.5);
     height: 100%;
 }
 
@@ -189,17 +188,17 @@ header {
     width: 37px;
     height: 40px;
     cursor: pointer;
-    top: 40%;
+    top: 43%;
 }
 
 .arrow--left {
     background:url(../img/sprite_icon.png) 0 0 no-repeat;
-    left:-10px;
+    left:-6px;
 }
 
 .arrow--right {
     background: url(../img/sprite_icon.png) -43px 0 no-repeat;
-    right: -15px;
+    right: -6px;
     /* top: 44%; */;;
 }
 
@@ -440,6 +439,8 @@ header {
     color: #454545;
     float: right;
     text-transform: uppercase;
+    margin-right: 13%;
+    padding-top: 18px;
 }
 
 .link__blog:hover {
@@ -458,6 +459,35 @@ header {
     background-image: url(../img/back_icon.jpg);
     left: -61px;
     top: -6px;
+}
+
+.img-content-updates--n1{
+    background-position: 0 79px;
+}
+
+.img-content-updates--n2{
+    background-position: 0 -63px;
+}
+
+.img-content-updates--n3{
+    background-position: 0 -29px;
+}
+
+.bullet--pers{
+    background-color: white;
+    border: 1px solid #454545;
+}
+
+.bullet-inner--pers {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+    background: #45484d; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ1NDg0ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
+
 }
 
 /*section BRANDS*/
@@ -562,7 +592,6 @@ footer {
 }
 .menu--footer {
     margin: 0 auto;
-    background-color: DeepSkyBlue;
     margin-bottom: 40px;
     display: none;
 }

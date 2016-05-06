@@ -181,11 +181,11 @@
     }
 
     .description-company {
-        padding-left: 2%;
+        padding-left: 0%;
     }
 
     .section-content--left {
-        width: 100%;
+        width:27%;
     }
     .text-content--decoration {
         width: 74%;
@@ -196,7 +196,7 @@
         float: right;
         line-height: 3em;
         width: 36%;
-        margin-right: 17%;
+        margin-right: 31%;
     }
 
     .read-more-link:hover {
@@ -216,6 +216,8 @@
 
     .brands {
         width: 100%;
+        padding-right: 15%;
+        padding-left: 7%;
     }
 
     .category{
@@ -239,7 +241,6 @@
 @media screen and (min-width:960px){
 
     .container {
-        background-color:  rgba(255, 103, 250, 0.66);
     }
 
     .categories {
@@ -253,7 +254,6 @@
     }
 
     .container {
-        background: rgba(103, 161, 255, 0.3);
         width: 960px;
     }
 
@@ -375,9 +375,10 @@
     }
 
     .section-content--left {
+        width: 27%;
     }
     .text-content--decoration {
-        width: 74%;
+        width: 80%;
         font-size: 1em;
     }
 
@@ -419,9 +420,38 @@
 
     .menu--footer {
         display: block;
+        width: 502px;
+        float: left;
     }
 
     .design_text {
         float: right;
+        padding-top: 19px;
+    }
+
+    .header--content {
+        padding-top: 0;
+        float: left;
+        margin-right: 0px;
+    }
+
+    .pink {
+        line-height: 1em;
+        margin-left: 6px;
+    }
+
+    .menu__item--footer {
+        float: left;
+        margin-right: 45px;
+    }
+
+    .reply-section{
+        height: 200px;
+    }
+
+    
+
+    footer {
+        height: 77px;
     }
 }
