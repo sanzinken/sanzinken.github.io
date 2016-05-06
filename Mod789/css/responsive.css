@@ -211,13 +211,12 @@
 
     .section-content--blogs {
         float: right;
-        width: 45%;
+        width: 48%;
     }
 
     .brands {
-        width: 100%;
-        padding-right: 15%;
         padding-left: 7%;
+        width: 92%;
     }
 
     .category{
@@ -440,6 +439,10 @@
         margin-left: 6px;
     }
 
+    .link__blog {
+        margin-right: 13%;
+    }
+
     .menu__item--footer {
         float: left;
         margin-right: 45px;
@@ -480,10 +483,11 @@
         font-size: 1em;
         font-style: italic;
         color: #c5c5c5;
+        margin-bottom: 7px;
     }
 
     .hidden-category {
-        height: 20px;
+        height: 100px;
     }
 
     footer {

@@ -399,7 +399,6 @@ header {
 
 .section-content--blogs {
     padding-bottom: 90px;
-    margin-left: 7%;
     width: 91%;
 }
 
@@ -568,7 +567,9 @@ header {
     padding-top: 0;
 }
 
-
+.visible_960px {
+    display: none;
+}
 
 /*<<<<<<<<<<<<<FOOTER>>>>>>>>>>>>>>>>*/
 
