@@ -78,7 +78,7 @@
         width: 440px;
     }
 }
-
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media screen and (min-width:768px) and (max-width: 959px) {
 
     .container {
@@ -134,7 +134,8 @@
         display: block;
         width: 67.9%;
         text-align: left;
-        font-size: 0.6875em;
+        font-family: "MyriadProLight";
+        font-size: 1em;
         line-height: 1.375em;
         color: white;
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
@@ -184,7 +185,7 @@
     }
 
     .section-content--left {
-        width: 26%;
+        width: 100%;
     }
     .text-content--decoration {
         width: 74%;
@@ -203,7 +204,7 @@
         cursor: pointer;
     }
 
-    .pers-opinion {
+    .pers-oppinion {
         width: 45%;
         float: left;
     }
@@ -245,7 +246,182 @@
         display: block;
     }
 
+
+
     .slider__arrow__wrapper {
-        width: 75%;
+        max-width:1400px;
+    }
+
+    .container {
+        background: rgba(103, 161, 255, 0.3);
+        width: 960px;
+    }
+
+    .header {
+        text-align: left;
+        float: left;
+        padding-top: 70px;
+        margin-right: 170px;
+    }
+
+    .menu-drop {
+        display: none;
+    }
+
+    .menu-line{
+        display: block;
+    }
+    .menu--head {
+        margin-top: 0;
+    }
+
+    .header-nav-menu {
+        float: left;
+        width: 540px;
+        padding-top: 70px;;
+    }
+
+    .menu--linerlist {
+        text-align: center;
+    }
+
+    .menu__item--line {
+        display: inline-block;
+        margin-right: 50px;
+    }
+
+    .menu__link:hover {
+        text-shadow: 0px 0px 10px white;
+        cursor: pointer;
+    }
+
+    .menu__item--line:last-child {
+        margin-right: 0;
+    }
+
+    .menu__link {
+        text-shadow:2px 2px 3px rgba(0, 0, 0, 0.4);
+    }
+    .slider {
+        height: 400px;
+        background: rgba(50, 50, 50, 0.5);
+    }
+
+    .slider-content {
+        width: 47.511628%;
+        float: left;
+        margin-top: 90px;
+        margin-left: 2%;
+        text-align: left;
+
+    }
+    .slider__container {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .slider-content  p{
+        display: block;
+        font-family: "MyriadProLight";
+        width: 67.9%;
+        text-align: left;
+        font-size: 1em;
+        line-height: 1.375em;
+        color: white;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+        margin-top: 20px;
+    }
+
+    .image-wrapper{
+        display: block;
+        margin-right: 20%;
+    }
+
+    .image__phone {
+        position: absolute;
+    }
+
+    .image__phone--blur {
+        right: 20%;
+        float: right;
+        height: 61.265306%;
+        top: 36px;
+        margin-right: 8%;;
+    }
+
+    .image__phone--sharp {
+        height: 95%;
+        float: right;
+        top: -10px;
+    }
+
+    .image__phone--play {
+        height: 20.44898%;
+        float: right;
+        margin-left: 56px;
+        margin-top: 129px;
+    }
+
+    .bullet-container {
+        margin-top: 25px;
+    }
+
+    .categories {
+        display: block;
+    }
+
+    .description-company {
+        padding-left: 2%;
+    }
+
+    .section-content--left {
+    }
+    .text-content--decoration {
+        width: 74%;
+        font-size: 1em;
+    }
+
+    .read-more-link {
+        float: right;
+        line-height: 3em;
+        width: 36%;
+        margin-right: 17%;
+    }
+
+    .read-more-link:hover {
+        cursor: pointer;
+    }
+
+    .pers-oppinion {
+        width: 45%;
+        float: left;
+    }
+
+    .section-content--blogs {
+        float: right;
+        width: 45%;
+    }
+
+    .brands {
+        width: 100%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .category{
+        width: 30%;
+        float: left;
+        padding-right: 5%;
+    }
+    .category:last-child{
+        padding-right: 0;
+    }
+
+    .menu--footer {
+        display: block;
+    }
+
+    .design_text {
+        float: right;
     }
 }
