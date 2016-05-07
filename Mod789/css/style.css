@@ -53,6 +53,7 @@ header {
     border-bottom:  1px solid #262526;
     background-position: top;
     margin: 0 auto;
+    background-attachment: fixed;
 }
 
 
