@@ -2,7 +2,6 @@
 
     .container {
         width:91.6666667%;
-        background-color:rgba(255, 0, 0, 0.5);
     }
 
     header {
@@ -68,6 +67,10 @@
         display: block;
     }
 
+    .link__blog {
+        margin-right: 10%;
+    }
+
     .brands {
         width: 440px;
         padding-left: 17%;
@@ -82,7 +85,6 @@
 @media screen and (min-width:768px) and (max-width: 959px) {
 
     .container {
-        background-color:  rgba(255, 103, 65, 0.66);
         width: 92.791667%
     }
 
@@ -212,6 +214,10 @@
     .section-content--blogs {
         float: right;
         width: 48%;
+    }
+
+    .link__blog {
+        margin-right: 10%;
     }
 
     .brands {
