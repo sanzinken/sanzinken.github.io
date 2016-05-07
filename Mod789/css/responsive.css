@@ -1,7 +1,7 @@
 @media screen and (min-width:480px) and (max-width: 767px) {
 
     .container {
-        width:91.6666667%;
+        width:90.166666%;
     }
 
     header {
@@ -68,12 +68,12 @@
     }
 
     .link__blog {
-        margin-right: 10%;
     }
 
     .brands {
-        width: 440px;
-        padding-left: 17%;
+        width: 398px;
+        margin: 0 auto;
+        padding-left: 5%;
     }
 
     .menu--footer {
@@ -221,8 +221,9 @@
     }
 
     .brands {
-        padding-left: 7%;
-        width: 92%;
+        padding-left: 2%;
+        width: 94%;
+        margin: 0 auto;
     }
 
     .category{
