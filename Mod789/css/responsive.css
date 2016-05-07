@@ -85,7 +85,7 @@
 @media screen and (min-width:768px) and (max-width: 959px) {
 
     .container {
-        width: 92.791667%
+        width: 84.791667%
     }
 
     .header {
@@ -127,7 +127,7 @@
         width: 47.511628%;
         float: left;
         margin-top: 90px;
-        margin-left: 2%;
+        margin-left: 6%;
         text-align: left;
 
     }
@@ -314,15 +314,15 @@
     }
 
     .slider-content {
-        width: 47.511628%;
+        width: 49.511628%;
         float: left;
         margin-top: 90px;
-        margin-left: 2%;
         text-align: left;
+        margin-left: 5%;
 
     }
     .slider__container {
-        width: 960px;
+        width: 1067px;
         margin: 0 auto;
     }
 
