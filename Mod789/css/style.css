@@ -344,6 +344,7 @@ header {
 .text-content--decoration {
     color: white;
     text-shadow: 1px 1px  #000;
+    width: 100%;
 }
 
 .update-content--decoration {
