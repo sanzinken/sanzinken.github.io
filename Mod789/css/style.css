@@ -197,12 +197,12 @@ header {
 
 .arrow--left {
     background:url(../img/sprite_icon.png) 0 0 no-repeat;
-    left:-6px;
+    left:7px;
 }
 
 .arrow--right {
     background: url(../img/sprite_icon.png) -43px 0 no-repeat;
-    right: -6px;
+    right: 3px;
     /* top: 44%; */;;
 }
 
@@ -338,6 +338,7 @@ header {
     display: inline-block;
     line-height:  1.5625em;
     overflow:  hidden;
+    width:  90%;
 }
 
 .text-content--decoration {
@@ -410,7 +411,7 @@ header {
 }
 
 .blog-updates-list {
-    width: 125.4716981%;
+    width: 100.;
     padding-top: 28px;
 }
 
@@ -428,8 +429,8 @@ header {
 
 .blogs-post-content {
     position: relative;
-    margin-left: 58px;
     padding-bottom: 2.5em;
+    margin-left: 58px;
 }
 
 .blogs-post-content:last-child {
@@ -443,7 +444,6 @@ header {
     color: #454545;
     float: right;
     text-transform: uppercase;
-    margin-right: 13%;
     padding-top: 18px;
 }
 
@@ -505,7 +505,7 @@ header {
 
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.5);
     padding-top: 55px;
     padding-bottom: 20px;
 }
