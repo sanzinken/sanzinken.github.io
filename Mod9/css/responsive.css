@@ -1,0 +1,503 @@
+@media screen and (min-width:480px) and (max-width: 767px) {
+
+    .container {
+        width:90.166666%;
+    }
+
+    header {
+        padding-bottom: 35px;
+    }
+
+    .header-nav-menu {
+        width: 58.1395349%;
+        margin: 0 auto;
+    }
+    .slider {
+        height: 245px;
+        background: rgba(50, 50, 50, 0.5);
+    }
+
+    .slider-content {
+        width: 47.511628%;
+        float: left;
+        margin-top: 90px;
+        margin-left: 2%;
+    }
+
+    .image-wrapper{
+        display: block;
+        margin-right: 20%;
+    }
+
+    .image__phone {
+        position: absolute;
+    }
+
+    .image__phone--blur {
+        right: 23%;
+        float: right;
+        height: 63.2653061%;
+        top: 36px;
+        margin-right: 8%;;
+    }
+
+    .image__phone--sharp {
+        height: 110%;
+        float: right;
+        top: -10px;
+    }
+
+    .image__phone--play {
+        height: 22.4489796%;
+        float: right;
+        margin-left: 40px;
+        margin-top: 93px;
+    }
+
+    .bullet-container {
+        margin-top: 25px;
+    }
+
+    .section-content--blogs{
+        margin: 0 auto;
+        width: 79.1666667%;
+    }
+
+    .categories {
+        display: block;
+    }
+
+    .link__blog {
+    }
+
+    .brands {
+        width: 398px;
+        margin: 0 auto;
+        padding-left: 5%;
+    }
+
+    .menu--footer {
+        display: block;
+        width: 440px;
+    }
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media screen and (min-width:768px) and (max-width: 959px) {
+
+    .container {
+        width: 92.791667%
+    }
+
+    .header {
+        text-align: left;
+    }
+
+    .menu-drop {
+        display: none;
+    }
+
+    .menu-line{
+        display: block;
+    }
+
+    .menu--linerlist {
+        text-align: left;
+        margin-top: 45px;
+    }
+
+    .menu__item--line {
+        display: inline-block;
+        margin-right: 6.5104167%;
+    }
+
+    .menu__item--line:last-child {
+        margin-right: 0;
+    }
+
+    .menu-line .menu__item--line  .menu__link {
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    .slider {
+        height: 400px;
+        background: rgba(50, 50, 50, 0.5);
+    }
+
+    .slider-content {
+        width: 47.511628%;
+        float: left;
+        margin-top: 90px;
+        margin-left: 6%;
+        text-align: left;
+
+    }
+
+    .slider-content  p{
+        display: block;
+        width: 67.9%;
+        text-align: left;
+        font-family: "MyriadProLight";
+        font-size: 1em;
+        line-height: 1.375em;
+        color: white;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+        margin-top: 20px;
+    }
+
+    .image-wrapper{
+        display: block;
+        margin-right: 20%;
+    }
+
+    .image__phone {
+        position: absolute;
+    }
+
+    .image__phone--blur {
+        right: 22%;
+        float: right;
+        height: 61.265306%;
+        top: 36px;
+        margin-right: 8%;;
+    }
+
+    .image__phone--sharp {
+        height: 95%;
+        float: right;
+        top: -10px;
+    }
+
+    .image__phone--play {
+        height: 20.44898%;
+        float: right;
+        margin-left: 56px;
+        margin-top: 129px;
+    }
+
+    .bullet-container {
+        margin-top: 25px;
+    }
+
+    .categories {
+        display: block;
+    }
+
+    .description-company {
+        padding-left: 0%;
+    }
+
+    .section-content--left {
+        width:27%;
+    }
+    .text-content--decoration {
+        width: 74%;
+        font-size: 1em;
+    }
+
+    .read-more-link {
+        float: right;
+        line-height: 3em;
+        width: 36%;
+        margin-right: 31%;
+    }
+
+    .read-more-link:hover {
+        text-shadow: 0 0 3px white;
+        cursor: pointer;
+    }
+
+    .pers-oppinion {
+        width: 45%;
+        float: left;
+    }
+
+    .section-content--blogs {
+        float: right;
+        width: 48%;
+    }
+
+    .link__blog {
+        margin-right: 10%;
+    }
+
+    .brands {
+        padding-left: 2%;
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .category{
+        width: 30%;
+        float: left;
+        padding-right: 5%;
+    }
+    .category:last-child{
+        padding-right: 0;
+    }
+
+    .menu--footer {
+        display: block;
+    }
+
+    .design_text {
+        float: right;
+    }
+}
+
+@media screen and (min-width:960px){
+
+    .container {
+    }
+
+    .categories {
+        display: block;
+    }
+
+
+
+    .slider__arrow__wrapper {
+        max-width:1400px;
+    }
+
+    .container {
+        width: 960px;
+    }
+
+    .header {
+        text-align: left;
+        float: left;
+        padding-top: 70px;
+        margin-right: 170px;
+    }
+
+    .menu-drop {
+        display: none;
+    }
+
+    .menu-line{
+        display: block;
+    }
+    .menu--head {
+        margin-top: 0;
+    }
+
+    .header-nav-menu {
+        float: left;
+        width: 540px;
+        padding-top: 70px;;
+    }
+
+    .menu--linerlist {
+        text-align: center;
+    }
+
+    .menu__item--line {
+        display: inline-block;
+        margin-right: 50px;
+    }
+
+    .menu__link:hover {
+        text-shadow: 0px 0px 10px white;
+        cursor: pointer;
+    }
+
+    .menu__item--line:last-child {
+        margin-right: 0;
+    }
+
+    .menu__link {
+        text-shadow:2px 2px 3px rgba(0, 0, 0, 0.4);
+    }
+    .slider {
+        height: 400px;
+        background: rgba(50, 50, 50, 0.5);
+    }
+
+    .slider-content {
+        width: 49.511628%;
+        float: left;
+        margin-top: 90px;
+        text-align: left;
+        margin-left: 5%;
+
+    }
+    .slider__container {
+        width: 1067px;
+        margin: 0 auto;
+    }
+
+    .slider-content  p{
+        display: block;
+        font-family: "MyriadProLight";
+        width: 67.9%;
+        text-align: left;
+        font-size: 1em;
+        line-height: 1.375em;
+        color: white;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+        margin-top: 20px;
+    }
+
+    .image-wrapper{
+        display: block;
+        margin-right: 20%;
+    }
+
+    .image__phone {
+        position: absolute;
+    }
+
+    .image__phone--blur {
+        right: 20%;
+        float: right;
+        height: 61.265306%;
+        top: 36px;
+        margin-right: 8%;;
+    }
+
+    .image__phone--sharp {
+        height: 95%;
+        float: right;
+        top: -10px;
+    }
+
+    .image__phone--play {
+        height: 20.44898%;
+        float: right;
+        margin-left: 56px;
+        margin-top: 129px;
+    }
+
+    .bullet-container {
+        margin-top: 25px;
+    }
+
+    .categories {
+        display: block;
+    }
+
+    .description-company {
+        padding-left: 2%;
+    }
+
+    .section-content--left {
+        width: 27%;
+    }
+    .text-content--decoration {
+        width: 80%;
+        font-size: 1em;
+    }
+
+    .read-more-link {
+        float: right;
+        line-height: 3em;
+        width: 36%;
+        margin-right: 17%;
+    }
+
+    .read-more-link:hover {
+        cursor: pointer;
+    }
+
+    .pers-oppinion {
+        width: 45%;
+        float: left;
+    }
+
+    .section-content--blogs {
+        float: right;
+        width: 45%;
+    }
+
+    .brands {
+        width: 100%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .category{
+        width: 30%;
+        float: left;
+        padding-right: 5%;
+    }
+    .category:last-child{
+        padding-right: 0;
+    }
+
+    .menu--footer {
+        display: block;
+        width: 502px;
+        float: left;
+    }
+
+    .design_text {
+        float: right;
+        padding-top: 19px;
+    }
+
+    .header--content {
+        padding-top: 0;
+        float: left;
+        margin-right: 0px;
+    }
+
+    .pink {
+        line-height: 1em;
+        margin-left: 6px;
+    }
+
+    .link__blog {
+        margin-right: 13%;
+    }
+
+    .menu__item--footer {
+        float: left;
+        margin-right: 45px;
+    }
+
+    .reply-section{
+        height: 200px;
+    }
+
+    .header--category {
+        padding-top: 0;
+    }
+
+    .header--category-hidden-960px {
+        display: none;
+    }
+
+    .visible_960px {
+        display: block;
+    }
+
+    .header--category-960 {
+        font-family: "Legue Gothic Regular";
+        font-size: 3em;
+        color: #454545;
+        text-transform: uppercase;
+        text-shadow: 0 1px 0 #fff;
+    }
+
+    .er-category {
+        font-family: "Legue Gothic Regular";
+        color: #b9b9b9;
+        text-shadow: 0px 1px 0 #fff;
+    }
+
+    .copyright {
+        font-family: "Georgia";
+        font-size: 1em;
+        font-style: italic;
+        color: #c5c5c5;
+        margin-bottom: 7px;
+    }
+
+    .hidden-category {
+        height: 100px;
+    }
+
+    footer {
+        height: 77px;
+    }
+}
