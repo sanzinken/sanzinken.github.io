@@ -53,6 +53,7 @@ header {
     border-bottom:  1px solid #262526;
     background-position: top;
     margin: 0 auto;
+    background-attachment: fixed;
 }
 
 
@@ -343,6 +344,7 @@ header {
 .text-content--decoration {
     color: white;
     text-shadow: 1px 1px  #000;
+    width: 100%;
 }
 
 .update-content--decoration {
