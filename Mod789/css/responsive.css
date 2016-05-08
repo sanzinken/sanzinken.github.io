@@ -412,7 +412,7 @@
     .brands {
         width: 100%;
         padding-left: 15%;
-        padding-right: 15%;
+        /*padding-right: 15%;*/
     }
 
     .category{
