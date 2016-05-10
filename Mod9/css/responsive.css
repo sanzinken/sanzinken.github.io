@@ -45,6 +45,7 @@
         height: 110%;
         float: right;
         top: -10px;
+        margin-right: 7.8125%;
     }
 
     .image__phone--play {
@@ -357,7 +358,6 @@
 
     .image__phone--sharp {
         height: 95%;
-        float: right;
         top: -10px;
     }
 
