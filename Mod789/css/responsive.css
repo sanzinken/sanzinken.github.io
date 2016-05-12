@@ -26,6 +26,7 @@
 
     .image-wrapper{
         display: block;
+        width: 300px;
     }
 
     .image__phone {
@@ -49,7 +50,7 @@
     .image__phone--play {
         height: 22.4489796%;
         top: 102px;
-        right: 76px;
+        right: 73px;
     }
 
     .bullet-container {
@@ -144,6 +145,7 @@
 
     .image-wrapper{
         display: block;
+        float: right;
     }
 
     .image__phone {
