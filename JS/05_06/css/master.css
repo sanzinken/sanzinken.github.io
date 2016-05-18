@@ -1,0 +1,33 @@
+body{
+    font-family:  'Didact Gothic', Arial, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.timerHeader{
+    font-family: "Jura";
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+.timer {
+    margin-top: 5%;
+    font-family: "Jura";
+    font-size: 4em;
+}
+
+.logBlock {
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: #696a6a;
+    background-color: #dbdbdb;
+    height: 100%;
+    overflow: scroll;
+}
+
+.informationBlock {
+    height: 10em;
+}
+
+.buttonsBlock {
+    padding-top: 5%;
+}
