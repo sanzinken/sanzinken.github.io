@@ -1,4 +1,4 @@
-var timer = function(){
+var Timer = function(elem){
     var min = 0;
     var sec = 0;
     var mSec = 0;
@@ -8,25 +8,31 @@ var timer = function(){
     var offset;
     var time = 0;
 
-
      this.start = function(){
-         if(!isOn){
+         if(!this.isOn){
              offset = Date.now();
-             interval = setInterval(update, 10);
+             interval = setInterval(update.bind(this), 9);
              isOn = true;
          }
-    };
+    }
 
     this.stop = function(){
+        console.log('in stop function');
+        if(isOn){
+            clearInterval(interval);
+            interval = null;
+            isOn = false;
+        }
+    }
 
-    };
-    this.clear = function(){
-
+    this.reset = function(){
+        time = 0;
     }
 
     function update(){
-        time += delta();
-        console.log(timeFormater(time));
+            time += delta();
+        var formTime = timeFormater(time);
+        elem.textContent= formTime;
     }
 
     function delta(){
@@ -37,10 +43,11 @@ var timer = function(){
     }
 
     function timeFormater(timeInMilliseconds) {
+
         var time = new Date(timeInMilliseconds);
-        mSec = time.getMilliseconds();
-        sec =  time.getSeconds();
-        min =  time.getMinutes();
+        mSec = time.getMilliseconds().toString();
+        sec =  time.getSeconds().toString();
+        min =  time.getMinutes().toString();
 
         if(min.length < 2){
             min = '0' + min;
@@ -48,13 +55,13 @@ var timer = function(){
         if(sec.length < 2){
             sec = '0' + sec;
         }
-        if (mSec.length < 3) {
-            if (mSec.length < 2) {
-                mSec = '00' + mSec;
-            }
+        while (mSec.length < 3) {
+            // if (mSec.length < 2) {
+            //     mSec = '00' + mSec;
+            // }
             mSec = '0' + mSec;
         }
 
         return min + ' : ' + sec + ' . ' + mSec;
-    };
+    }
 }
