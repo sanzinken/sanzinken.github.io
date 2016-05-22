@@ -4,13 +4,19 @@ var reset = document.getElementsByClassName('reset')[0];
 var timerView = document.getElementsByClassName('timer')[0];
 var watch = new Timer(timerView);
 
+watch.isOn = false;
+
+console.log(watch.isOn);
+
 startStop.addEventListener('click', function() {
     if(watch.isOn){
-        startStop.textContent = "Start";
+        console.log(' stop watch.isOn', watch.isOn);
         watch.stop();
+        startStop.textContent = "Start";
     }else{
-        startStop.textContent = 'Stop';
+        console.log(' stop watch.isOn', watch.isOn);
         watch.start();
+        startStop.textContent = 'Stop';
     }
 });
 

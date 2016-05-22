@@ -9,19 +9,23 @@ var Timer = function(elem){
     var time = 0;
 
      this.start = function(){
-         if(!this.isOn){
+         if(!isOn){
              offset = Date.now();
-             interval = setInterval(update.bind(this), 9);
-             isOn = true;
+             interval = setInterval(update, 9);
+             this.isOn = true;
+             console.log("this ",this);
+             console.log(isOn, "on start function");
          }
     }
 
     this.stop = function(){
-        console.log('in stop function');
+  console.log('in stop function in timer.js but not in if: ',  isOn);
+
         if(isOn){
+            console.log('isOn in stop function in timer.js');
             clearInterval(interval);
             interval = null;
-            isOn = false;
+            this.isOn = false;
         }
     }
 
