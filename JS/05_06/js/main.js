@@ -4,13 +4,11 @@ var reset = document.getElementsByClassName('reset')[0];
 var timerView = document.getElementsByClassName('timer')[0];
 var watch = new Timer(timerView);
 
-watch.isOn = false;
-
-console.log(watch.isOn);
 
 startStop.addEventListener('click', function() {
-    if(watch.isOn){
-        console.log(' stop watch.isOn', watch.isOn);
+    console.log('click on startBtn watch.isOn', watch.isOn);
+    if(watch.isOn){/*why it work, when watch,isOn == false ???*/
+        console.log(' stop watch.isOn', watch.isOn);/*in console.log watch.isOn == false. It shoudn't work! WTF*/
         watch.stop();
         startStop.textContent = "Start";
     }else{

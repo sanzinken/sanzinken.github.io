@@ -3,37 +3,37 @@ var Timer = function(elem){
     var sec = 0;
     var mSec = 0;
 
-    var isOn = false;
     var interval;
     var offset;
     var time = 0;
+    this.isOn = false;
 
      this.start = function(){
-         if(!isOn){
+         console.log(this);
+         if(!this.isOn){
              offset = Date.now();
-             interval = setInterval(update, 9);
+             interval = setInterval(update.bind(this), 9);
+             console.log('after interval', interval);
              this.isOn = true;
-             console.log("this ",this);
-             console.log(isOn, "on start function");
+             console.log (this.isOn);
+             console.log('function START');
          }
     }
 
     this.stop = function(){
-  console.log('in stop function in timer.js but not in if: ',  isOn);
-
-        if(isOn){
-            console.log('isOn in stop function in timer.js');
+        if(this.isOn){
             clearInterval(interval);
             interval = null;
             this.isOn = false;
+            console.log('function STOP');
         }
     }
-
     this.reset = function(){
         time = 0;
     }
 
     function update(){
+        console.log('update work!');
             time += delta();
         var formTime = timeFormater(time);
         elem.textContent= formTime;
