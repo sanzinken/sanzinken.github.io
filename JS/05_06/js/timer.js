@@ -12,7 +12,7 @@ var Timer = function(elem){
          console.log(this);
          if(!this.isOn){
              offset = Date.now();
-             interval = setInterval(update.bind(this), 9);
+             interval = setInterval(update.call(this), 9);
              console.log('after interval', interval);
              this.isOn = true;
              console.log (this.isOn);
@@ -33,9 +33,10 @@ var Timer = function(elem){
     }
 
     function update(){
-        console.log('update work!');
+        console.log('*******************update work!********************');
             time += delta();
         var formTime = timeFormater(time);
+        console.log(formTime);
         elem.textContent= formTime;
     }
 
