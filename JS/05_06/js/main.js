@@ -7,8 +7,8 @@ var watch = new Timer(timerView);
 // watch.isOn = false;
 startStop.addEventListener('click', function() {
     console.log('click on startBtn watch.isOn', watch.isOn);
-    if(watch.isOn){/*why it work, when watch,isOn == false ???*/
-        console.log(' stop watch.isOn in if', watch.isOn);/*in console.log watch.isOn == false. It shoudn't work WTF*/
+    if(watch.isOn){
+        console.log(' stop watch.isOn in if', watch.isOn);
         watch.stop();
         startStop.textContent = "Start";
     }else{
@@ -18,14 +18,14 @@ startStop.addEventListener('click', function() {
     }
 });
 
-reset = addEventListener('click', function () {
+reset.addEventListener('click', function () {
     if(watch.isOn) {
         watch.stop();
         watch.reset();
-        startStop.textContent = 'Stop'
+        startStop.textContent = 'Start'
         watch.isOn = false;
     }else{
         watch.reset();
         watch.isOn = false;
     }
-})
+});

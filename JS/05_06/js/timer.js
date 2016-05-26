@@ -9,16 +9,13 @@ var Timer = function(elem){
     this.isOn = false;
 
      this.start = function(){
-         console.log(this);
          if(!this.isOn){
              offset = Date.now();
-             interval = setInterval(update.call(this), 9);
-             console.log('after interval', interval);
+             interval = setInterval(update.bind(this), 9);
              this.isOn = true;
-             console.log (this.isOn);
              console.log('function START');
          }
-    }
+    };
 
     this.stop = function(){
         if(this.isOn){
@@ -30,7 +27,12 @@ var Timer = function(elem){
     }
     this.reset = function(){
         time = 0;
-    }
+        min = '00';
+        sec = '00';
+        mSec = '000';
+        elem.textContent = min + ' : ' + sec + ' . ' + mSec;
+        console.log('reset is working. time = ' + time );
+    };
 
     function update(){
         console.log('*******************update work!********************');
@@ -38,14 +40,14 @@ var Timer = function(elem){
         var formTime = timeFormater(time);
         console.log(formTime);
         elem.textContent= formTime;
-    }
+    };
 
     function delta(){
         var now = Date.now();
         var timePassed = now - offset;
         offset = now;
         return timePassed;
-    }
+    };
 
     function timeFormater(timeInMilliseconds) {
 
@@ -61,12 +63,9 @@ var Timer = function(elem){
             sec = '0' + sec;
         }
         while (mSec.length < 3) {
-            // if (mSec.length < 2) {
-            //     mSec = '00' + mSec;
-            // }
             mSec = '0' + mSec;
         }
 
         return min + ' : ' + sec + ' . ' + mSec;
-    }
+    };
 }
