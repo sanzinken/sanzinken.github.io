@@ -13,7 +13,6 @@ var Timer = function(elem){
              offset = Date.now();
              interval = setInterval(update.bind(this), 9);
              this.isOn = true;
-             console.log('function START');
          }
     };
 
@@ -22,23 +21,25 @@ var Timer = function(elem){
             clearInterval(interval);
             interval = null;
             this.isOn = false;
-            console.log('function STOP');
         }
-    }
+    };
+
     this.reset = function(){
         time = 0;
         min = '00';
         sec = '00';
         mSec = '000';
         elem.textContent = min + ' : ' + sec + ' . ' + mSec;
-        console.log('reset is working. time = ' + time );
+        cleanSplitList();
+    };
+
+    this.split = function(){
+        addTimeMark(timeFormater(time));
     };
 
     function update(){
-        console.log('*******************update work!********************');
             time += delta();
         var formTime = timeFormater(time);
-        console.log(formTime);
         elem.textContent= formTime;
     };
 

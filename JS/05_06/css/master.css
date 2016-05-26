@@ -31,3 +31,11 @@ body{
 .buttonsBlock {
     padding-top: 5%;
 }
+
+.timemark {
+    margin-bottom:  0px;
+}
+
+.timemark:nth-child(odd){
+    color:#524e4e;
+}
