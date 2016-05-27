@@ -1,8 +1,13 @@
+.header{
+    margin-right: 100px;
+}
+.menu-drop{
+    display: none;
+}
+//////////////////////////////////////////////////////////////
 .categories {
     display: block;
 }
-
-
 
 .slider__arrow__wrapper {
     max-width:1400px;
