@@ -1,9 +1,6 @@
-.header{
-    margin-right: 100px;
-}
-.menu-drop{
-    display: none;
-}
+
+
+
 //////////////////////////////////////////////////////////////
 .categories {
     display: block;
@@ -20,8 +17,9 @@
 .header {
     text-align: left;
     float: left;
-    padding-top: 70px;
-    margin-right: 170px;
+    /*padding-top: 70px;*/
+    margin-right: 100px;
+    padding-bottom: 700px;
 }
 
 .menu-drop {
