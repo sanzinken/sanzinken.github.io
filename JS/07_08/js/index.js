@@ -6,9 +6,12 @@ $(function() {
         $('.textblock').hide().eq($(this).index()).fadeIn();
     }).eq(0).addClass('active');
 
-    $('.form-wrapper .form-field').hover(function(){
-        $('.formblock .helptext').eq($('.form-wrapper .form-field').index()).addClass('.helptext-active');
-    }, function(){
-        $('.formblock .helptext').eq($('.form-wrapper .form-field').index()).removeClass('.helptext-active');
+    $('.formblock .form-field').hover(function(){
+        $('.formblock .helptext').eq($('.form-wrapper .form-field').index()).toggleClass('.helptext-active');
+    },
+    function(){
+        console.log($('.helptext'));
+        $('.helptext').eq($('.form-wrapper .form-field').index()).toggleClass('.helptext-active');
+        console.log($('.helptext').eq($('.form-wrapper .form-field').index(this)));
     });
 });
