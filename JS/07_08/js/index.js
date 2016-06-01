@@ -7,12 +7,8 @@ $(function() {
     }).eq(0).addClass('active');
 
     $('.form-wrapper .form-field').hover(function(){
-        var index =$('.form-wrapper .form-field').index(this);
-        console.log(index);
-        $('.formblock .helptext').eq(index).addClass('.helptext-active');
-    },function(){
-        var index = $('.form-wrapper .form-field').index(this);
-        console.log(index);
-        $('.formblock .helptext').eq(index).removeClass('.helptext-active');
+        $('.formblock .helptext').eq($('.form-wrapper .form-field').index()).addClass('.helptext-active');
+    }, function(){
+        $('.formblock .helptext').eq($('.form-wrapper .form-field').index()).removeClass('.helptext-active');
     });
 });
