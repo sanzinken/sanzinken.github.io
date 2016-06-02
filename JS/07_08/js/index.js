@@ -6,12 +6,13 @@ $(function() {
         $('.textblock').hide().eq($(this).index()).fadeIn();
     }).eq(0).addClass('active');
 
+    $('.helptext').hide();
     $('.formblock .form-field').hover(function(){
-        $('.formblock .helptext').eq($('.form-wrapper .form-field').index()).toggleClass('.helptext-active');
+        $('.helptext').eq($(this).index()).fadeIn(500);
+        console.log($(this).index());
     },
     function(){
-        console.log($('.helptext'));
-        $('.helptext').eq($('.form-wrapper .form-field').index()).toggleClass('.helptext-active');
-        console.log($('.helptext').eq($('.form-wrapper .form-field').index(this)));
+        $('.helptext').eq($('.formblock .form-field').index()).fadeOut(500);
+        console.log($(this).index());
     });
 });
