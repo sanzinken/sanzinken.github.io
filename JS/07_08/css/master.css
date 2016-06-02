@@ -84,8 +84,10 @@ body {
 }
 
 .fieldname {
+    text-align: center;
     font-size: 1em;
     float: left;
+    width: 50px;
 }
 .field-wrapper{
     float:left;

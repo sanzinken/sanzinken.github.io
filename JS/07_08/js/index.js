@@ -8,7 +8,6 @@ $(function() {
 
     $('.helptext').hide();
     $('.form-wrapper .form-field').hover(function(){
-        console.log($('.form-wrapper .form-field').index(this));
         $('.form-wrapper .helptext').eq($('.form-wrapper .form-field').index(this)).fadeIn(500);
     },
     function(){
