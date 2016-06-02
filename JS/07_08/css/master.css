@@ -72,10 +72,14 @@ body {
     float: left;
 }
 
+.form-field{
+    margin-right: 25px;
+}
+
 .formblock{
-    margin: 5px 15px 5px 10px;
+    margin: 20px 15px 20px 20px;
     clear: both;
-    text-align: right;
+    text-align:left;
     line-height: 2.25em;
 }
 
@@ -84,21 +88,27 @@ body {
     float: left;
 }
 .field-wrapper{
-    float:right;
+    float:left;
     margin-left:20px;
 }
 .helptext {
     font-size: 1em;
+<<<<<<< HEAD
     width: 200px;
     text-align: center;
     display: inline-block;
+=======
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+>>>>>>> a7fd6b35d09aea3b3f64f7b5c8ab032a8eb3ec6b
     border-radius: 3px;
     -webkit-box-shadow: 0px 0px 5px 3px rgba(87,87,87,1);
     -moz-box-shadow: 0px 0px 5px 3px rgba(87,87,87,1);
     box-shadow: 0px 0px 5px 3px rgba(87,87,87,1);
 }
 
-.helptext-active {
+.formblock .helptext-active {
     display: inline-block;
     padding: 3px;
     border-radius: 3px;
