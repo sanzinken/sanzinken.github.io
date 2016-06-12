@@ -1,7 +1,20 @@
+body {
+    background-color: #d4d1cc;
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+}
+
+.wrapper {
+    width: 1000px;
+    border-right: 1px solid #adabab;
+    border-left: 1px solid  #adabab;
+    margin: 0 auto;
+}
+
 .jcarousel {
     position: relative;
     overflow: hidden;
-    width: 800px;
+    width: 600px;
+    margin: 0 auto;
 }
 
 .jcarousel ul {
@@ -11,4 +24,37 @@
 
 .jcarousel li {
     float: left;
+}
+
+.picture {
+    display: block;
+    background-size: cover;
+}
+
+header {
+    margin: 0 auto;
+}
+
+.sectHeader {
+
+}
+
+.exercise {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mainHeader {
+    text-align: center;
+    margin: 0 auto;
+    color: #c86000;
+    font-size: 3em;
+}
+
+.sectHeader {
+    text-align: center;
+    color: #c86000;
+    font-size: 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
