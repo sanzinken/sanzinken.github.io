@@ -31,4 +31,5 @@ $(function() {
     })
 // Selectric
     $('select').selectric();
+
 });

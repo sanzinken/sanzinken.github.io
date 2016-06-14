@@ -5,8 +5,14 @@ body {
 
 .wrapper {
     width: 1000px;
+    height: 2000px;
     border-right: 1px solid #adabab;
     border-left: 1px solid  #adabab;
+    margin: 0 auto;
+}
+
+.wrapper--selectric {
+    width: 600px;
     margin: 0 auto;
 }
 
@@ -16,11 +22,9 @@ body {
     background-color: #fff;
     border-radius: 5px;
     margin: 0 auto;
-}
-
-.wrapper {
     width: 600px;
 }
+
 .jcarousel {
     overflow: hidden;
     width: 600px;
