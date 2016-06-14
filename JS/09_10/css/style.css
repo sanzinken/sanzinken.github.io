@@ -10,11 +10,22 @@ body {
     margin: 0 auto;
 }
 
-.jcarousel {
+.jcarousel-wrapper {
     position: relative;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 600px;
+}
+.jcarousel {
     overflow: hidden;
     width: 600px;
     margin: 0 auto;
+    position: relative;
 }
 
 .jcarousel ul {
@@ -26,17 +37,54 @@ body {
     float: left;
 }
 
-.picture {
+.jcarousel-cursor {
     display: block;
-    background-size: cover;
+    text-decoration: none;
+    top: 48%;
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    color: #b6b6b6;
+    background-color: #5c5b60;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 26px;
+    /* padding-top: 5px; */
+    /* padding-left: 5px; */;
+}
+.jcarousel-prev{
+    left: 20px;
+}
+
+.jcarousel-next{
+    right: 20px;
+}
+
+.jcarousel-pagination {
+    position: absolute;
+    top: 90%;
+    left: 43%;
+}
+
+.jcarousel-pagination a {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin-right: 4px;
+    border-radius: 10px;
+    border: 1px solid #9d9d9d;
+    background-color: #2f2c2a;
+}
+
+.jcarousel-pagination .active {
+    background-color: #f5f5f5;
 }
 
 header {
     margin: 0 auto;
-}
-
-.sectHeader {
-
 }
 
 .exercise {

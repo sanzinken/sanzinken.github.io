@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/selectric.css">
     <title>09_10js</title>
     <script src="https://cdn.jsdelivr.net/jquery/3.0.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jcarousel/0.3.4/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.selectric.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
@@ -18,26 +20,48 @@
         <main>
             <section class="exercise ex1">
                 <h2 class="sectHeader">jCarousel</h2>
-                <div class="jcarousel">
-                    <ul class="jcarousel-list">
-                        <li class="jcarousel-item"><img src="img/img1.jpg" alt="img1"></li>
-                        <li class="jcarousel-item"><img src="img/img2.jpg" alt="img2"></li>
-                        <li class="jcarousel-item"><img src="img/img3.jpg" alt="img3"></li>
-                        <li class="jcarousel-item"><img src="img/img4.jpg" alt="img4"></li>
-                        <li class="jcarousel-item"><img src="img/img5.jpg" alt="img5"></li>
-                        <li class="jcarousel-item"><img src="img/img6.jpg" alt="img6"></li>
-                    </ul>
+                <div class="jcarousel-wrapper wrapper">
+                    <div class="jcarousel">
+                        <ul class="jcarousel-list">
+                            <li class="jcarousel-item"><img src="img/img1.jpg" alt="img1"></li>
+                            <li class="jcarousel-item"><img src="img/img2.jpg" alt="img2"></li>
+                            <li class="jcarousel-item"><img src="img/img3.jpg" alt="img3"></li>
+                            <li class="jcarousel-item"><img src="img/img4.jpg" alt="img4"></li>
+                            <li class="jcarousel-item"><img src="img/img5.jpg" alt="img5"></li>
+                            <li class="jcarousel-item"><img src="img/img6.jpg" alt="img6"></li>
+                        </ul>
+                        <a class="jcarousel-prev jcarousel-cursor" href="#"><</a>
+                        <a class="jcarousel-next jcarousel-cursor" href="#">></a>
+                        <div class="jcarousel-pagination">
+                            <!-- Pagination items will be generated in here -->
+                        </div>
+                    </div>
                 </div>
                 <!-- Controls -->
-                  <a class="jcarousel-prev" href="#">Prev</a>
-                   <a class="jcarousel-next" href="#">Next</a>
 
-                   <div class="jcarousel-pagination">
-                       <!-- Pagination items will be generated in here -->
-                   </div>
             </section>
-            <section class="exercise">
+            <section class="exercise select">
+                <h2 class="sectHeader selectric">Selectric</h2>
+                <div class="wrapper">
+                    <div class="selectric-hide-select">
+                        <select tabindex="0">
 
+                        </select>
+                        <option>Selectric. Select with optgroup</option>
+                        <optgroup label="Group 1">
+                            <option>option 1</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option>option 2.1</option>
+                            <option>option 2.2</option>
+                        </optgroup>
+                        <optgroup label="Group 3">
+                            <option>option 3.1</option>
+                            <option>option 3.2</option>
+                            <option>option 3.3</option>
+                        </optgroup>
+                    </div>
+                </div>
             </section>
             <section class="exercise">
 
