@@ -11,7 +11,7 @@ body {
     margin: 0 auto;
 }
 
-.wrapper--selectric {
+.container {
     width: 600px;
     margin: 0 auto;
 }
@@ -109,4 +109,36 @@ header {
     font-size: 2em;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.css-check {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+
+label {
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.css-checkbox-label:before {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(img/checkbox-2.png);
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+}
+
+.css-check:checked + .css-checkbox-label:before {
+    background-position: 12  -0px;
+}
+
+.css-checkbox-label:hover:before {
+    background-position: -3 -34px;
+}
+.css-check:checked + .css-checkbox-label:hover:before {
+    background-position: -3 -51px;
 }
