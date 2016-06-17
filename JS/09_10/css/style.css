@@ -126,19 +126,20 @@ label {
     display: inline-block;
     width: 17px;
     height: 17px;
-    background: url(img/checkbox-2.png);
+    background: url(../img/checkbox-2.png);
     position: relative;
     top: 3px;
     margin-right: 5px;
 }
 
+
 .css-check:checked + .css-checkbox-label:before {
-    background-position: 12  -0px;
+    background-position: 17px  -17px;
 }
 
 .css-checkbox-label:hover:before {
-    background-position: -3 -34px;
+    background-position: -0px -34px;
 }
 .css-check:checked + .css-checkbox-label:hover:before {
-    background-position: -3 -51px;
+    background-position: -0px -51px;
 }
