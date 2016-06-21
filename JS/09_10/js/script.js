@@ -31,5 +31,43 @@ $(function() {
     })
 // Selectric
     $('select').selectric();
+//
+    // jQuery checkbox
+    $('.checkbox-custom').mousedown(
+        function() {
+            changeChake( $(this) );
+        }
+    );
 
+    $('.checkbox-custom').each(
+        function() {
+            changeChakeStart( $(this) );
+        }
+    );
+
+    function changeChake( el ) {
+        var el = el,
+        input = el.find("input").eq(0);
+
+        if( !input.attr('checked') ) {
+            el.css("background-position","0 -17px");
+            input.attr("checked", true);
+        }else {
+            el.css("background-position","0 0");
+            input.attr("checked", false)
+        }
+
+     return true;
+    };
+
+    function changeChakeStart ( el ) {
+        var el = el,
+        input =  el.find('input').eq(0);
+
+        if(  input.attr('checked') ) {
+            el.css("background-position","0 -17px");
+        }
+
+        return true;
+    }
 });

@@ -143,3 +143,97 @@ label {
 .css-check:checked + .css-checkbox-label:hover:before {
     background-position: -0px -51px;
 }
+
+.checkbox-custom {
+    background: url(../img/checkbox.png);
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 134px;
+}
+
+.checkbox-custom label {
+    width: 120px;
+    margin-left: 19px;
+    display: block;
+}
+
+.checkbox-custom input {
+    display: none;
+}
+
+.item {
+    font-size: 0.8em;
+    width: 100%;
+    height: 100%;
+    color: #585858;
+    text-decoration: none;
+    line-height: 42px;
+    display: block;
+}
+
+.item:hover{
+    color: #d6d6d6;
+    background-color: #f9b1a4;
+}
+
+.sub-menu-container:hover{
+    color: #d6d6d6;
+    background-color: #a4f9e9;
+}
+
+.nav-item {
+    width: 90px;
+    height: 40px;
+    background-color: #f78769;
+    margin-top: 3px;
+    text-align: center;
+}
+
+
+
+.sub-menu-container {
+    position: relative;
+}
+
+.nav-item{
+    border: 1px solid #838383;
+}
+
+.nav-item1 {
+    display: inline-block;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 27px;
+    left: 16px;
+}
+
+.sub-menu-title {
+    font-size: 0.8em;
+    color: #585858;
+    line-height: 42px;
+}
+
+.menu-lev2 {
+    z-index: 100;
+}
+
+.menu-lev3 {
+    left: 71px;
+    top: 26px;
+    z-index: 110;
+}
+
+.menu {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    width: 39%;
+    margin: 0 auto;
+
+}
