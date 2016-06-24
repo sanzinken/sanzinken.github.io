@@ -70,4 +70,22 @@ $(function() {
 
         return true;
     }
+// slide menu
+     $('.sub-menu').hide();
+
+    $('.sub-menu-container-1').hover(function(){
+        $('.menu-lev2').slideToggle();
+        console.log('hover on sub-menu1');
+    }, function(){
+        $('.menu-lev2').hide();
+        console.log('hover off sub-menu1');
+    });
+
+    $('.sub-menu-container-2').hover(function(){
+        $('.menu-lev3').slideToggle();
+        console.log('hover on sub-menu2');
+    }, function(){
+        $('.menu-lev3').hide();
+        console.log('hover off submenu-3');
+    })
 });

@@ -154,14 +154,16 @@ label {
 }
 
 .checkbox-custom label {
-    width: 120px;
+    width: 70px;
     margin-left: 19px;
     display: block;
+    line-height: 17px;
 }
 
 .checkbox-custom input {
     display: none;
 }
+
 
 .item {
     font-size: 0.8em;
@@ -205,11 +207,18 @@ label {
     display: inline-block;
 }
 
+.nav-item2 {
+}
+
+.nav-item3 {
+}
+
 .sub-menu {
     position: absolute;
     top: 27px;
     left: 16px;
 }
+
 
 .sub-menu-title {
     font-size: 0.8em;
