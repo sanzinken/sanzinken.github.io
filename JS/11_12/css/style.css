@@ -1,5 +1,5 @@
-.carousel-item {
-  display: inline-block;
-  float: left;
-  margin-right: 15px;
-}
+ .clearfix:after {
+   display: block;
+   content: "";
+   clear: both;
+ }
