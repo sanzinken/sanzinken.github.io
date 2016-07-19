@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.1.0.slim.js" integrity="sha256-L6ppAjL6jgtRmfiuigeEE5AwNI2pH/X9IBbPyanJeZw=" crossorigin="anonymous"></script>
+    <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js"></script>
     <script type="text/javascript" src="script/jquery.myCarouselPlugin.js"></script>
     <script type="text/javascript" src="script/main.js"></script>
     <title>Work_11_12</title>
@@ -14,7 +15,7 @@
   <body>
       <div class="wrapper">
 
-        <ul class="carousel-list clearfix">
+        <ul class="carousel-list">
           <li class="carousel-item"><img src="img/600/download.jpg" alt="somePict" class="carousel-img"></li>
           <li class="carousel-item"><img src="img/600/download(1).jpg" alt="carousel-img" class="carousel-img"></li>
           <li class="carousel-item"><img src="img/600/download(2).jpg" alt="carousel-img" class="carousel-img"></li>
@@ -26,6 +27,82 @@
           <li class="carousel-item"><img src="img/600/download(8).jpg" alt="carousel-img" class="carousel-img"></li>
           <li class="carousel-item"><img src="img/600/download(9).jpg" alt="carousel-img" class="carousel-img"></li>
         </ul>
+
+      </div>
+      <div class="second-ex">
+        <script type="text/html" id="renderingScript">
+          <header class="script-head">
+
+            <h1 class="name"><%-name%></h1>
+            <img src="<%path%>" alt="photo by person" class="photo">
+            <p class="job"><%-job%></p>
+
+          </header>
+          <hr>
+          <main>
+
+          <div class="box1 box">
+
+            <p>Хочу учить фронтенд, потому что:</p>
+
+            <ul class="reasons">
+              <%reasons.forEach(function(reason){%>
+                <li class="reason"><%-reason%></li>
+              <%});%>
+            </ul>
+
+          </div>
+          <div class="box2 box">
+
+                <p>Мой контактный телефон</p>
+                <p><%-phone%></p>
+                <br>
+                <p>Мой профиль в facebook</p>
+                <a href="<%-facebook%>">"></a>
+
+          </div>
+
+          </main>
+          <hr>
+          <footer>
+
+            <p>Мой фидбек:</p>
+            <p><%-feedback%></p>
+
+          </footer>
+
+        </script>
+
+        <header>
+      		<h1>Зинкевич Александр Сергеевич</h1>
+      		<img src="img/Iam.jpg" alt="I am">
+      		<p>Работник електротехнической лаборатории атомной станции</p>
+      	</header>
+      	<hr>
+      	<main>
+      		<div id="box1" class="box">
+      			<p>Хочу учить фронтенд, потому что:</p>
+      			<ul id="list">
+      				<li>Работа вредная</li>
+      				<li>Советская система менеджмента</li>
+      				<li>Платят мало</li>
+      				<li>Приходиться работать по ночам</li>
+      			</ul>
+      		</div>
+      		<hr>
+      		<div id="box2" class="box">
+      			<p>Мой контактный телефон</p>
+      			<p>+380680247530</p>
+      			<br>
+      			<p>Мой профиль в facebook</p>
+      			<a href="https://www.facebook.com/profile.php?id=100006057079142">facebook</a>
+      		</div>
+      	</main>
+      	<hr>
+      	<footer>
+      		<p>Мой фидбек:</p>
+      		<p>Ночью не свечусь. Могу измерить сопротивление контура заземления</p>
+      	</footer>
 
       </div>
   </body>

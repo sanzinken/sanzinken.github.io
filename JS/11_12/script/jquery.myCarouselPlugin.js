@@ -9,8 +9,7 @@
     };
 
     var settings = $.extend(default_setiings, options);
-
-    $('.wrapper').append('<div class="carousel-hider"></div>');
+    $(this).parent().append('<div class="carousel-hider"></div>');
     $(this).appendTo('div.carousel-hider');
 
     var $img = $('.carousel-img');
@@ -34,18 +33,24 @@
 
     var pixelOffset = parseInt(settings.imgWidth);
     var curentLeftValue = 0;
+    var elementCount = $list.find('li').length;
+    var minOffset = -((elementCount - 5) * pixelOffset);
+    var maxOffset = 0;
 
     $leftArrow.on('click', function(e){
       e.preventDefault();
-      curentLeftValue += pixelOffset;
-      console.log(curentLeftValue);
-      $list.animate({left: curentLeftValue + 'px'}, 300);
+      if(curentLeftValue != maxOffset){
+        curentLeftValue += pixelOffset;
+        $list.animate({left: curentLeftValue + 'px'}, 300);
+      }
     });
 
     $rightArrow.on('click', function(e){
       e.preventDefault();
-      curentLeftValue -= pixelOffset;
-      $list.animate({left: curentLeftValue + 'px'}, 300);
+      if(curentLeftValue != minOffset){
+        curentLeftValue -= pixelOffset;
+        $list.animate({left: curentLeftValue + 'px'}, 300);
+      }
     });
 
 
