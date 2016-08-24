@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js"></script> -->
+    <script type="text/javascript" src="script/template.js"></script>
     <script type="text/javascript" src="script/jquery.myCarouselPlugin.js"></script>
     <script type="text/javascript" src="script/main.js"></script>
     <title>Work_11_12</title>
@@ -35,10 +36,10 @@
         <script type="text/html" id="renderingScript">
             <header class="script-head">
 
-                <h1 class="name"><%-name%></h1>
+                <h1 class="name"><%=name%></h1>
                 <img src="<%path%>" alt="photo by person" class="photo">
                 <p class="job">
-                    <%-job%>
+                    <%=job%>
                 </p>
 
             </header>
@@ -52,7 +53,7 @@
                     <ul class="reasons">
                         <%reasons.forEach(function(reason){%>
                             <li class="reason">
-                                <%-reason%>
+                                <%=reason%>
                             </li>
                             <%});%>
                     </ul>
@@ -62,11 +63,11 @@
 
                     <p>Мой контактный телефон</p>
                     <p>
-                        <%-phone%>
+                        <%=phone%>
                     </p>
                     <br>
                     <p>Мой профиль в facebook</p>
-                    <a href="<%-facebook%>">"></a>
+                    <a href="<%=facebook%>">"></a>
 
                 </div>
 
@@ -76,7 +77,7 @@
 
                 <p>Мой фидбек:</p>
                 <p>
-                    <%-feedback%>
+                    <%=feedback%>
                 </p>
 
             </footer>
