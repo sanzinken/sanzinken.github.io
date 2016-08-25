@@ -1,12 +1,12 @@
-// $(function(){
-//
-//   $('ul.carousel-list').myCarouselPlugin({});
-//
-// });
+$(function(){
+
+  $('ul.carousel-list').myCarouselPlugin({});
+
+});
 
 $(function(){
 
-  var html = $('#renderingScript');
+  var html = $('#renderingScript').html();
 
   var obj = {
     name: 'Alexandr Zinkevych',
@@ -19,7 +19,8 @@ $(function(){
   };
 
   var content = tmpl(html, obj);
+  console.log(content);
 
-  $('second-ex').append(content);
+  $('.second-ex').append(content);
 
 });
