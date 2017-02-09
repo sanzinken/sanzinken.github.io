@@ -5,16 +5,16 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js"></script> -->
-    <!-- <script type="text/javascript" src="script/jquery.myCarouselPlugin.js"></script> -->
+    <script type="text/javascript" src="script/jquery.myCarouselPlugin.js"></script>
     <script type="text/javascript" src="script/template.js"></script>
     <script type="text/javascript" src="script/main.js"></script>
     <title>Work_11_12</title>
 </head>
 
 <body>
-    <!-- <div class="wrapper clearfix">
+    <div class="wrapper clearfix">
 
         <ul class="carousel-list">
             <li class="carousel-item"><img src="img/600/download.jpg" alt="somePict" class="carousel-img"></li>
@@ -29,7 +29,7 @@
             <li class="carousel-item"><img src="img/600/download(9).jpg" alt="carousel-img" class="carousel-img"></li>
         </ul>
 
-    </div> -->
+    </div>
     <!-- Second exersise -->
 
     <div class="second-ex wrapper">
@@ -37,9 +37,9 @@
             <header class="script-head">
 
                 <h1 class="name"><%= name %></h1>
-                <img src="<%path%>" alt="photo by person" class="photo">
+                <img src="<%=path%>" alt="photo by person" class="photo">
                 <p class="job">
-                    <%= job %>
+                    <%=job%>
                 </p>
 
             </header>
