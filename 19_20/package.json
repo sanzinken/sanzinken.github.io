@@ -1,0 +1,31 @@
+{
+  "name": "19_20",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "sanzinken.github.io"
+  },
+  "author": "sanzinken",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-grid": "^2.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "2.*",
+    "gulp": "latest",
+    "gulp-autoprefixer": "3.*",
+    "gulp-connect": "latest",
+    "gulp-imagemin": "3.2.*",
+    "gulp-rigger": "latest",
+    "gulp-sass": "3.1.*",
+    "gulp-sourcemap": "1.0.*",
+    "gulp-uglify": "2.*",
+    "gulp-watch": "*",
+    "imagemin-pngquant": "5.*"
+  },
+  "description": ""
+}

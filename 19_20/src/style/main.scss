@@ -1,0 +1,63 @@
+/*
+* Third Party
+*/
+@import "../../bower_components/normalize-css/normalize.css";
+@import  "../../node_modules/bootstrap-grid/dist/grid.min.css";
+/*************************************************************/
+@import "./partials/fonts.scss";
+
+@media (max-width: 767px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    margin: 0 auto;
+    width: 1160px;
+  }
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+body {
+  font: 16px "Droid Sans" ,Arial, Sans-serif;
+}
+
+header {
+  .brand-symbol {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/icons.png) 0 0 no-repeat;
+  }
+
+  .firm-name {
+    font-family: 'Ubuntu-Regular';
+    font-size: 30px;
+    display: inline-block;
+  }
+
+  .firm-description {
+    font: 20px Arial;
+    font-stretch: semi-expanded;
+    display: inline-block;
+  }
+}

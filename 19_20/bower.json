@@ -1,0 +1,33 @@
+{
+  "name": "19_20",
+  "homepage": "https://github.com/sanzinken/sanzinken.github.io",
+  "authors": [
+    "sanzinken <sanzinken@gmail.com>"
+  ],
+  "description": "lesson 19-20",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "source",
+    "spec",
+    ".bowerrc",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    "bower.json",
+    "gruntfile.js",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "normalize-css": "latest",
+    "jquery": "latest",
+    "owl-carousel": "latest"
+  }
+}
