@@ -15,17 +15,18 @@
     "bootstrap-grid": "^2.0.1"
   },
   "devDependencies": {
-    "browser-sync": "2.*",
+    "browser-sync": "latest",
     "gulp": "latest",
-    "gulp-autoprefixer": "3.*",
+    "gulp-autoprefixer": "latest",
     "gulp-connect": "latest",
-    "gulp-imagemin": "3.2.*",
+    "gulp-imagemin": "latest",
     "gulp-rigger": "latest",
-    "gulp-sass": "3.1.*",
+    "gulp-sass": "latest",
+    "gulp-minify-css": "latest",
     "gulp-sourcemap": "1.0.*",
-    "gulp-uglify": "2.*",
+    "gulp-uglify": "latest",
     "gulp-watch": "*",
-    "imagemin-pngquant": "5.*"
+    "imagemin-pngquant": "latest"
   },
-  "description": ""
+  "description": "ex 19_20"
 }

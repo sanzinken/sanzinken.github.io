@@ -1,0 +1,149 @@
+header {
+
+  .name {
+    display: inline-block;
+  }
+
+  .brand-symbol {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/icons.png) 0 0 no-repeat;
+  }
+
+  .firm-name {
+    font-family: 'Ubuntu-Regular';
+    font-size: 30px;
+    line-height: 0px;
+    text-transform: capitalize;
+  }
+
+  .firm-description {
+    font: 12px "Ubuntu-Light";
+    font-stretch: semi-expanded;
+    font-weight: lighter;
+    line-height: 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    margin-left: 3px;
+  }
+
+  .social-network {
+    margin-top: 0.7%;
+    float: right;
+  }
+
+  .social-network ul{
+    margin-left: 0;
+  }
+
+  .soc-net{
+    display: inline-block;
+    list-style:none;
+    cursor: pointer;
+  }
+
+  .soc-net a {
+    display: block;
+    height: 17px;
+    width: 18px;
+  }
+
+  .soc-net--facebook a {
+    background: url(../img/socialNetworks.png) 8px 0px no-repeat;
+    transition: background-position 0.3s ease-out 0.1s;
+  }
+
+  .soc-net--twitter a {
+    background: url(../img/socialNetworks.png) -8px 0 no-repeat;
+    transition: background-position 0.3s ease-out 0.1s;
+  }
+
+  .soc-net--rss a {
+    background: url(../img/socialNetworks.png) -26px 0 no-repeat;
+    transition: background-position 0.3s ease-out 0.1s;
+  }
+
+  .soc-net--linkdin a {
+    background: url(../img/socialNetworks.png) -44px 0 no-repeat;
+    transition: background-position 0.3s ease-out 0.1s;
+  }
+
+  .soc-net--skype a {
+    background: url(../img/socialNetworks.png) -62px 0 no-repeat;
+    transition: background-position 0.3s ease-out 0.1s;
+  }
+
+  .soc-net--facebook a:hover {
+    background: url(../img/socialNetworks.png) 8px -19px no-repeat;
+  }
+
+  .soc-net--twitter a:hover {
+    background: url(../img/socialNetworks.png) -8px -19px no-repeat;
+  }
+
+  .soc-net--rss a:hover {
+    background: url(../img/socialNetworks.png) -26px -19px no-repeat;
+  }
+
+  .soc-net--linkdin a:hover {
+    background: url(../img/socialNetworks.png) -44px -19px no-repeat;
+  }
+
+  .soc-net--skype a:hover {
+    background: url(../img/socialNetworks.png) -62px -19px no-repeat;
+  }
+
+  .nav-search-tabs {
+    height:60px;
+    width: 100%;
+    background-color: #2a2d32;
+  }
+
+  .header-nav-menu{
+    height: 60px;
+    width: 100%;
+  }
+
+  ul.main-menu {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  .main-menu li {
+    list-style: none;
+    display: inline-block;
+    height: 100%;
+    width: 125px;
+    border-right: 1px solid black;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .header-nav-menu li:first-child {
+    background-color: #3399ff;
+  }
+
+  .header-nav-menu li a {
+    font: 14px "Ubuntu-Condensed";
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    height: 100%;
+    width:100%;
+    margin-top: 16%;
+  }
+
+  .header-nav-menu li a:hover {
+    color: #f4b60d;
+  }
+
+  .header-nav-search {
+    display: inline-block;
+  }
+
+}

@@ -49,7 +49,7 @@ const config = {
   tunel: true,
   host: "localhost",
   port: 9000,
-  logPrefix: 'browserSync'
+  logPrefix: '19_20 FrontEnd'
 }
 /*******************************************************************************/
 //збираємо html
