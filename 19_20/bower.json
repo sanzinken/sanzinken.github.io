@@ -28,6 +28,7 @@
   "dependencies": {
     "normalize-css": "latest",
     "jquery": "latest",
-    "owl-carousel": "latest"
+    "font-awesome": "latest",
+    "owl.carousel": "^2.2.1"
   }
 }

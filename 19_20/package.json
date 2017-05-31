@@ -23,9 +23,9 @@
     "gulp-rigger": "latest",
     "gulp-sass": "latest",
     "gulp-minify-css": "latest",
-    "gulp-sourcemap": "1.0.*",
+    "gulp-sourcemap": "latest",
     "gulp-uglify": "latest",
-    "gulp-watch": "*",
+    "gulp-watch": "latest",
     "imagemin-pngquant": "latest"
   },
   "description": "ex 19_20"

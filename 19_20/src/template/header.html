@@ -1,7 +1,7 @@
 <header>
   <div class="container-fluid">
     <div class="row header-logo-row">
-        <div class="logo col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="logo col-xs-12 col-sm-6 col-md-3 col-lg-3">
           <div class="brand-symbol">
           </div>
           <div class="name">
@@ -9,9 +9,9 @@
             <h3 class="firm-description">industrial theme</h3>
           </div>
         </div>
-        <div class="social-network col-xs-12 col-sm-6 col-md-2 col-md-offset-6">
+        <div class="social-network col-xs-12 col-sm-4 col-md-2 col-md-offset-6">
           <nav>
-            <ul>
+            <ul class="social-network-list">
               <li class="soc-net  soc-net--facebook"><a href="#"></a></li>
               <li class="soc-net soc-net--twitter"><a href="#"></a></li>
               <li class="soc-net soc-net--rss"><a href="#"></a></li>
@@ -22,21 +22,29 @@
         </div>
     </div>
     <div class="row nav-search-tabs">
+
       <nav class="header-nav-menu">
         <ul class="main-menu">
-          <li class="main-menu-item"><a href="#">home</a></li>
+          <li class="main-menu-item main-menu-item--current"><a href="#">home</a></li>
           <li class="main-menu-item"><a href="#">features</a></li>
           <li class="main-menu-item"><a href="#">services</a></li>
           <li class="main-menu-item"><a href="#">news</a></li>
           <li class="main-menu-item"><a href="#">shop</a></li>
         </ul>
+
+        <div id="header-button-menu-760">
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </div>
+
+        <div class="header-nav-search">
+          <form class="search" action="index.html" method="post">
+            <input type="search" name="search-field" value="Search...">
+            <input type="submit" name="search-button" value="">
+          </form>
+          <i class="fa fa-search fa-lg" aria-hidden="true "></i>
+        </div>
       </nav>
-      <div class="header-nav-search">
-        <form class="search" action="index.html" method="post">
-          <input type="search" name="search-field" value="search">
-          <input type="submit" name="search-button" value="">
-        </form>
-      </div>
+
     </div>
   </div>
 </header>

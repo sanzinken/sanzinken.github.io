@@ -33,6 +33,10 @@ header {
     float: right;
   }
 
+  .social-network-list {
+    float: right;
+  }
+
   .social-network ul{
     margin-left: 0;
   }
@@ -95,20 +99,22 @@ header {
   }
 
   .nav-search-tabs {
-    height:60px;
-    width: 100%;
     background-color: #2a2d32;
   }
 
   .header-nav-menu{
-    height: 60px;
     width: 100%;
+    height: 60px;
+    line-height: 1px;
+    position: relative;
   }
 
   ul.main-menu {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 650px;
+    float: left;
   }
 
   .main-menu li {
@@ -118,8 +124,6 @@ header {
     width: 125px;
     border-right: 1px solid black;
     text-transform: uppercase;
-    text-align: center;
-    vertical-align: middle;
   }
 
   .header-nav-menu li:first-child {
@@ -132,10 +136,8 @@ header {
     text-decoration: none;
     cursor: pointer;
     text-align: center;
+    margin-top: 20px;
     display: block;
-    height: 100%;
-    width:100%;
-    margin-top: 16%;
   }
 
   .header-nav-menu li a:hover {
@@ -143,7 +145,45 @@ header {
   }
 
   .header-nav-search {
-    display: inline-block;
+    height: 40px;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+  .header-nav-search input[type="search"] {
+    font: 14px "Ubuntu-Light";
+    color: rgba(157, 157, 157, 0.95);
+    height: 40px;
+    width: 100%;
   }
 
+  .header-nav-search input[type="submit"] {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+  }
+
+  .header-nav-search .fa-search {
+    color: black;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .fa-search {
+    color: #2a2d32;
+    margin-right: -5px;
+    margin-top: -5px;
+  }
+
+  #header-button-menu-760 {
+    display: none;
+  }
 }

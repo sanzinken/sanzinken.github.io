@@ -25,8 +25,8 @@ const path = {
 
   src: { /*Звідси берем вихідні файли*/
     html: 'src/*.html',
-    js: 'src/js/main.js',
-    style: 'src/style/main.scss',
+    js: 'src/js/**/*.js',
+    style: 'src/style/styles.scss',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*'
   },
@@ -59,7 +59,7 @@ gulp.task('html:build', function() {
     .pipe(gulp.dest(path.build.html))
     .pipe(reload({stream: true}))
 });
-//збираємо js
+
 gulp.task('js:build', function(){
   return gulp.src(path.src.js)
     .pipe(rigger())
