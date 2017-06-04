@@ -1,3 +1,180 @@
+
 .slider {
+  position: relative;
+  margin-bottom: 75px;
+
+  .owl-dots {
+    height: 40px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+  }
+  .owl-dot {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: #b3b3b3;
+    border-radius: 8px;
+  }
+  .owl-dot:not(:first-child) {
+    margin-left: 10px;
+  }
+  .owl-dot.active {
+    background-color: #222222;
+  }
+
+  .owl-nav {
+    .owl-prev, .owl-next {
+      position: absolute;
+      top: 37%;
+    }
+
+    .owl-prev {
+      left: 5%;
+    }
+
+    .owl-next {
+      right: 5%;
+    }
+
+    .chevrons {
+      font-size: 50px;
+      color: #8a9296;
+    }
+  }
+}
+
+.technologies {
+  margin-bottom: 115px;
+  display: flex;
+
+
+
+  .technology {
+    font-family: "Ubuntu-Regular";
+
+    width: 30.33%;
+    display: flex;
+
+
+    .tech-numb {
+      font-size: 85px;
+      font-weight: bold;
+      line-height: 0.8;
+      margin-right: 15px;
+      color: #e9e9ea;
+    }
+
+    .tech-info-block {
+      .tech-logo {
+        height: 36px;
+        width: 36px;
+        background-image: url(../img/icons.png);
+      }
+
+      .tech-logo_power {background-position: -40px 0px;}
+      .tech-logo_newtech {background-position: -75px 0px;}
+      .tech-logo_support {background-position: -109px 0px;}
+
+
+      .tech-name {
+        font-size: 20px;
+        text-transform: capitalize;
+      }
+
+      .tech-desc {
+        font-family: "Ubuntu-Light";
+        font-size: 13px;
+        color: #8a8a8a;
+      }
+
+      .tech-more-read {
+        .read-more {
+          font-size: 13px;
+          color: black;
+          text-decoration: none;
+          text-transform: capitalize;
+        }
+
+        .read-more:hover {
+          color: #3af;
+        }
+      }
+    }
+  }
+
+  .technology:not(:last-child) {
+    margin-right: 1.5%;
+  }
+}
+.services-container {
   width: 100%;
+  background-color: #2a2d32;
+  padding-top: 45px;
+  padding-bottom: 65px;
+  margin-bottom: 65px;
+}
+.services {
+
+  text-transform: capitalize;
+  font-family: "ubuntu-Regular";
+  color: white;
+
+  .sec-tag {
+    font-size: 24px;
+    line-height: 0.833;
+    margin-top: 0;
+  }
+
+  .service-container {
+    display: flex;
+    justify-content: space-between;
+
+    .service {
+      position: relative;
+
+      .serv-img {
+        display: block;
+        width: 260px;
+        height: 260px;
+        cursor: pointer;
+      }
+
+      .serv-img_shedule {background: url(../img/pictures.jpg) 0 0;}
+      .serv-img_maintance {background: url(../img/pictures.jpg) -300px 0;}
+      .serv-img_wheel {background: url(../img/pictures.jpg) -599px 0;}
+      .serv-img_repair {background: url(../img/pictures.jpg) -900px 0;}
+
+      .add-service-modal {
+        visibility: hidden;
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        background-color: rgba(55, 129, 255, 0.7);
+      }
+
+      .serv-img:hover .add-service-modal {
+        visibility: visible;
+      }
+
+      .fa-plus {
+        position: absolute;
+        top: 110px;
+        left: 110px;
+        color: white;
+      }
+
+      h4.serv-name {
+        text-align: center;
+        padding-bottom: 0px;
+        -webkit-margin-after: 0;
+      }
+
+    }
+  }
+
+
+
+
+
 }

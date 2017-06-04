@@ -1,5 +1,9 @@
-header {
+.wrapper {
+  margin: 0 auto;
+  width: 1160px;
+}
 
+header {
   .name {
     display: inline-block;
   }
@@ -157,11 +161,15 @@ header {
     color: rgba(157, 157, 157, 0.95);
     height: 40px;
     width: 100%;
+    background-color: #35383c;
+    border: none;
+    padding-left: 2%;
   }
 
   .header-nav-search input[type="submit"] {
     height: 30px;
     width: 30px;
+    background-color: #282828;
     position: absolute;
     top: 5px;
     right: 5px;
@@ -171,7 +179,7 @@ header {
   }
 
   .header-nav-search .fa-search {
-    color: black;
+    color: rgb(122, 122, 122);
     position: absolute;
     top: 15px;
     right: 15px;
