@@ -1,8 +1,8 @@
 @media (max-width: 767px) {
-  .wrapper {
-    margin: 0 auto;
-  }
 
+  .wrapper{
+    width: 100%;
+  }
   header .social-network-list {
     display: none;
   }
@@ -74,15 +74,19 @@
         display: flex;
         align-content: flex-start;
         margin-bottom: 40px;
-        width: 100%;
       }
     }
 
     .services {
-
+      .service-container {
+        flex-direction : column;
+        flex-direction: column;
+        justify-content: space-around;
+        .services-subcontainer {
+          flex-direction: column;
+          justify-content: space-around;
+        }
+      }
     }
   }
-
-
-
 }

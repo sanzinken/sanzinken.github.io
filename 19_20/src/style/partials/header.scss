@@ -4,6 +4,9 @@
 }
 
 header {
+  .logo {
+    display: inline-block;
+  }
   .name {
     display: inline-block;
   }
@@ -33,6 +36,7 @@ header {
   }
 
   .social-network {
+    display: inline-block;
     margin-top: 0.7%;
     float: right;
   }

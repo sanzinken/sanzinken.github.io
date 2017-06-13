@@ -1,5 +1,6 @@
 @media (min-width: 992px) and (max-width: 1199px){
   .wrapper {
+		width: 100%;
   }
 
   nav .header-button-menu-760 {
@@ -7,8 +8,24 @@
   }
 
   main {
-    .services {
 
+    .services {
+      width: 60%;
+      margin: 0 auto;
+
+      .service-container {
+        display: flex;
+        flex-direction : column;
+        align-content: space-around;
+
+        .services-subcontainer {
+          justify-content: space-between;
+          display: flex;
+        }
+        .services-subcontainer:first-child {
+          margin-bottom: 7%;
+        }
+      }
     }
   }
 }

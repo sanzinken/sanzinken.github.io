@@ -52,8 +52,6 @@
 
   .technology {
     font-family: "Ubuntu-Regular";
-
-    width: 30.33%;
     display: flex;
 
 
@@ -108,7 +106,6 @@
   }
 }
 .services-container {
-  width: 100%;
   background-color: #2a2d32;
   padding-top: 45px;
   padding-bottom: 65px;
@@ -128,48 +125,56 @@
 
   .service-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 
-    .service {
-      position: relative;
+    .services-subcontainer {
+      display: inline-flex;
+      justify-content: space-between;
 
-      .serv-img {
-        display: block;
-        width: 260px;
-        height: 260px;
-        cursor: pointer;
+      .service:nth-child(1) {
+        margin-right: 40px;
       }
 
-      .serv-img_shedule {background: url(../img/pictures.jpg) 0 0;}
-      .serv-img_maintance {background: url(../img/pictures.jpg) -300px 0;}
-      .serv-img_wheel {background: url(../img/pictures.jpg) -599px 0;}
-      .serv-img_repair {background: url(../img/pictures.jpg) -900px 0;}
+      .service {
+        position: relative;
+        display: inline-block;
 
-      .add-service-modal {
-        visibility: hidden;
-        position: absolute;
-        width: 260px;
-        height: 260px;
-        background-color: rgba(55, 129, 255, 0.7);
+        .serv-img {
+          width: 260px;
+          height: 260px;
+          cursor: pointer;
+        }
+        .serv-img_shedule {background: url(../img/pictures.jpg) 0 0;}
+        .serv-img_maintance {background: url(../img/pictures.jpg) -300px 0;}
+        .serv-img_wheel {background: url(../img/pictures.jpg) -599px 0;}
+        .serv-img_repair {background: url(../img/pictures.jpg) -900px 0;}
+
+        .add-service-modal {
+          visibility: hidden;
+          position: absolute;
+          width: 260px;
+          height: 260px;
+          background-color: rgba(55, 129, 255, 0.7);
+        }
+
+        .serv-img:hover .add-service-modal {
+          visibility: visible;
+        }
+
+        .fa-plus {
+          position: absolute;
+          top: 110px;
+          left: 110px;
+          color: white;
+        }
+
+        h4.serv-name {
+          text-align: center;
+          padding-bottom: 0px;
+          -webkit-margin-after: 0;
+        }
       }
-
-      .serv-img:hover .add-service-modal {
-        visibility: visible;
-      }
-
-      .fa-plus {
-        position: absolute;
-        top: 110px;
-        left: 110px;
-        color: white;
-      }
-
-      h4.serv-name {
-        text-align: center;
-        padding-bottom: 0px;
-        -webkit-margin-after: 0;
-      }
-
     }
   }
 

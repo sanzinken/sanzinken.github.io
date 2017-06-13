@@ -2,6 +2,7 @@
 
 const gulp = require('gulp');
 const watch = require('gulp-watch');// переписує тільки ті файли, в яких відбулися реальні зміни
+const pug = require('gulp-pug');//pug(exJade)
 const prefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');

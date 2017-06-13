@@ -26,6 +26,7 @@
     "gulp-sourcemap": "latest",
     "gulp-uglify": "latest",
     "gulp-watch": "latest",
+    "gulp-pug": "^2.0.0",
     "imagemin-pngquant": "latest"
   },
   "description": "ex 19_20"
