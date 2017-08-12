@@ -28,5 +28,17 @@ $(document).ready(function(){
     $(this).toggleClass('header-button-menu-760_active');
   });
 
+  var accordionActive = $('.acco-active.acco-button');
+
+  $(".acco-button").click(function() {
+    if(!$(this).hasClass('acco-active')){
+      accordionActive.toggleClass('.acco-active');
+      accordionActive.next('.acco-active').toggleClass('.acco-active');
+      accordionActive = $(this);
+      accordionActive.html('-');
+      accordionActive.toggleClass('.acco-active');
+    }
+  });
+
   new WOW().init();
 });
