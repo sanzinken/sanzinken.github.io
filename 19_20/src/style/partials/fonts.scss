@@ -19,4 +19,9 @@
   font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+@font-face {
+    font-family: 'PT Sans';
+    src: url(../fonts/PT_Sans/PTS55F.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

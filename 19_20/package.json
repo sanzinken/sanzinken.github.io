@@ -25,7 +25,7 @@
     "gulp-rigger": "latest",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemap": "latest",
-    "gulp-uglify": "latest",
+    "gulp-uglify": "^3.0.0",
     "gulp-watch": "latest",
     "imagemin-pngquant": "latest"
   },

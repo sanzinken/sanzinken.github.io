@@ -117,12 +117,11 @@
 	background-color: #2a2d32;
 	padding-top: 45px;
 	padding-bottom: 65px;
-	margin-bottom: 65px;
 }
 
 .services {
 	text-transform: capitalize;
-	font-family: "ubuntu-Regular";
+	font-family: "Ubuntu-Regular";
 	color: white;
 
 	.sec-tag {
@@ -200,6 +199,7 @@
 }
 
 .news {
+    background-color: #f7f7f7;
 	padding-top: 65px;
 	padding-bottom: 65px;
 	display: flex;
@@ -294,6 +294,7 @@
 }
 
 .accordions-block {
+	height: 100px;
 	width: 48%;
 	display: inline-block;
 }
@@ -326,16 +327,23 @@
 	color: white;
 }
 
+.acco-disactive {
+	background-color: white;
+	color: #898a8c;
+}
+
 .acco-button-active {
 	content: "-";
 }
 
 .acco-text {
-  font: 12px 'PT Sans';
-    color: #8a8a8a;
-		line-height: 1.538;
-		width: 515px;
-		margin-left: 50px;
+  	font: 12px Arial;
+  	color: #8a8a8a;
+  	line-height: 1.538;
+  	width: 515px;
+  	height: 100px;
+	margin-left: 50px;
+	margin-bottom: 5px;
 }
 
 .text-hidden {
@@ -344,7 +352,7 @@
 }
 
 .acco-title-text {
-	font: 13px 'PT Sans';
+	font: 13px 'Ubuntu-Regular';
 	line-height: 40px;
 	text-transform: uppercase;
 }
