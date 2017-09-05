@@ -71,8 +71,8 @@ form.setAttribute('method', 'post');
 form.setAttribute('action', '#');
 row.appendChild(form);
 
-var check_1 = arrElements('input', 'someClass', 3);
-var check_2 = arrElements('input', 'someClass', 3);
+var check_1 = arrElements('input', 'someClass', 1);
+var check_2 = arrElements('input', 'someClass', 2);
 var check_3 = arrElements('input', 'someClass', 3);
 
 for (var iter in check_1){
