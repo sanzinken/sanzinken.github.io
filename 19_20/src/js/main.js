@@ -1,5 +1,5 @@
-//= partials/jquery.min.js
-//= partials/owl.carousel.js
+//= ../../bower_components/jquery/dist/jquery.js
+//= ../../bower_components/owl.carousel/dist/owl.carousel.js
 //= ../../bower_components/wow/dist/wow.min.js
 
 $(document).ready(function(){
@@ -28,51 +28,11 @@ $(document).ready(function(){
     $(this).toggleClass('header-button-menu-760_active');
   });
 
+  $('.acco-text:even:gt(0)').hide();
+  $('.acco-text:odd').hide();
 
-
-   
   $(".acco-button").click(function(event) {
-   
-     function takeActiveButton (obj) {
-      for (var i = 0; i < obj.length; i++) {
-        
-        if($(obj[i]).data('active') === 'enabled')
-          return obj[i];
-      }
-     }
-
-    var activeButton = takeActiveButton($('.acco-button'));
-    var thisElem = this;
-
-    if( $(activeButton).is(thisElem) ) {
-      return
-    }else{
-
-      $(thisElem).data('active', 'enabled');
-      $(activeButton).data('active', 'disabled');
-
-      $(this).html('-');
-      $(thisElem).next().removeClass('acco-disactive');
-      $(thisElem).next().addClass('acco-active');
-      $(thisElem).next().next().removeClass('text-hidden');
-      $(thisElem).next().next().slideToggle(300);
-      // $(thisElem).next().next().addClass('acco-text-active');
-      $(thisElem).removeClass('acco-disactive');
-      $(thisElem).addClass('acco-active');
-
-      $(activeButton).html('+');
-      $(activeButton).next().removeClass('acco-active');
-      $(activeButton).removeClass('acco-active');
-      $(activeButton).addClass('acco-disactive');
-      $(activeButton).next().addClass('acco-disactive');
-      // $(activeButton).next().next().addClass('text-hidden');
-      $(activeButton).next().next().slideToggle(300);
-      // $(activeButton).next().next().removeClass('acco-text-active');
-
-    }
-
   });
 
   new WOW().init();
-  console.log("----------REBUILD----------");
 });

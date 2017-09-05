@@ -294,13 +294,13 @@
 }
 
 .accordions-block {
-	height: 100px;
-	width: 48%;
-	display: inline-block;
-}
-.accordion-block {
-  font-family: 'Ubuntu-Regular';
 	width: 565px;
+	display: inline-block;
+  font-family: 'Ubuntu-Regular';
+}
+
+.accordion-item {
+	margin-bottom: 10px;
 }
 
 .acco-title {
@@ -310,6 +310,7 @@
 	border: 1px solid #9f9f9f;
 	display: inline-block;
 	box-sizing: border-box;
+	user-select: none;
 }
 
 .acco-button {
@@ -320,6 +321,7 @@
 	display: inline-block;
 	box-sizing: border-box;
 	cursor: pointer;
+	user-select: none;
 }
 
 .acco-active {
