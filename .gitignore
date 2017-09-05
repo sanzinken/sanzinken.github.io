@@ -1,4 +1,4 @@
-./tools/*
-./19_20/bower_components/*
-./19_20/build/*
-./19_20/node_modules/*
+tools/**
+19_20/bower_components/**
+19_20/build/**
+19_20/node_modules/**
