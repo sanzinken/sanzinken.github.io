@@ -87,15 +87,15 @@ for (var iter in check_3){
 
 var text_question_1 = [];
 for(var itr = 0; itr < 3; itr++){
-    text_question_1[itr] = document.createTextNode('Варіант №' + (eval(iter) + 1));
+    text_question_1[itr] = document.createTextNode('Варіант №' + (eval(itr) + 1));
 }
 var text_question_2 = [];
 for(var itr = 0; itr < 3; itr++){
-    text_question_2[itr] = document.createTextNode('Варіант №' + (eval(iter) + 1));
+    text_question_2[itr] = document.createTextNode('Варіант №' + (eval(itr) + 1));
 }
 var text_question_3 = [];
 for(var itr = 0; itr < 3; itr++){
-    text_question_3[itr] = document.createTextNode('Варіант №' + (eval(iter) + 1));
+    text_question_3[itr] = document.createTextNode('Варіант №' + (eval(itr) + 1));
 }
 
 var label_1 = arrElements('label', 'someFiClass', 3);
