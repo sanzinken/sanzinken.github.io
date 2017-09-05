@@ -79,10 +79,10 @@ for (var iter in check_1){
     check_1[iter].setAttribute('type', 'checkbox');
 }
 for (var iter in check_2){
-    check_1[iter].setAttribute('type', 'checkbox');
+    check_2[iter].setAttribute('type', 'checkbox');
 }
 for (var iter in check_3){
-    check_1[iter].setAttribute('type', 'checkbox');
+    check_3[iter].setAttribute('type', 'checkbox');
 }
 
 var text_question_1 = [];
