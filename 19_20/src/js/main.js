@@ -32,7 +32,37 @@ $(document).ready(function(){
   $('.acco-text:odd').hide();
 
   $(".acco-button").click(function(event) {
+    // get the content that needs to be shown
+    var currentContent = $(this).next().next();
+    var currentButton = $(this);
+    var currentButtonDesc = $(this).next();
+
+    var oldContent = $('.acco-text:visible');
+    var oldButton = $('.acco-button.acco-active');
+    var oldButtonDesc = $('.acco-title.acco-active');
+
+    // Make sure the content that needs to be shown isn't already visible
+    if ( currentContent.is(':visible') )
+      return false;
+
+    // Hide the old content
+    oldContent.slideToggle(300);
+    oldButton.text('+');
+    oldButton.removeClass('acco-active');
+    oldButtonDesc.removeClass('acco-active');
+
+    // Shown the new content;
+    currentContent.slideToggle(300);
+    currentButton.text('-');
+    currentButton.addClass('acco-active');
+    currentButtonDesc.addClass('acco-active');
   });
+
+  $('.acco-button').mousedown( function() {
+    return false;
+  });
+
+
 
   new WOW().init();
 });
