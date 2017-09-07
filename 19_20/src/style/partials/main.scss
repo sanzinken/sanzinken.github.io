@@ -371,3 +371,36 @@
   line-height: 40px;
   text-transform: uppercase;
 }
+
+// <section class="brands">
+
+.brand-list {
+  list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+
+  .brand-logo {
+    background: url(../img/brands.png);
+    height: 60px;
+    width: 120px;
+  }
+
+    .brand-logo:nth-child(1) {
+        background-position: -10px 0px;
+    }
+    .brand-logo:nth-child(2) {
+        background-position: -155px 0px;
+    }
+    .brand-logo:nth-child(3) {
+        background-position: -295px 0px;
+    }
+    .brand-logo:nth-child(4) {
+        background-position: -440px 0px;
+    }
+    .brand-logo:nth-child(5) {
+        background-position: 120px 0px;
+    }
+}
