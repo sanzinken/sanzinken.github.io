@@ -14,9 +14,12 @@ footer {
 
 .footer-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .info-block-header {
+    font: 16px Arial;
+    font-weight: bold;
     text-transform: uppercase;
     color: #fff;
 }
@@ -33,4 +36,8 @@ footer {
     font: 13px Arial;
     color: #5d6063;
     text-decoration: none;
+}
+
+.info-link:hover {
+  color: #248cec;
 }
