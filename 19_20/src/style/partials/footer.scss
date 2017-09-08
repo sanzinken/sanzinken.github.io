@@ -15,3 +15,22 @@ footer {
 .footer-container {
   display: flex;
 }
+
+.info-block-header {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.info-menu {
+    padding-left: 0;
+}
+
+.info-tip {
+    list-style: none;
+}
+
+.info-link {
+    font: 13px Arial;
+    color: #5d6063;
+    text-decoration: none;
+}
