@@ -17,7 +17,7 @@
 @import "./partials/992_1199.scss";
 /**************************************************************/
 @media (min-width: 1200px) {
-  
+
   header {
     nav .header-button-menu-760{
       display: none;
@@ -33,9 +33,9 @@
 }
 /***************************************************************/
 .clearfix:after {
-  display: block;
   clear: both;
   content: "";
+  display: block;
 }
 
 
