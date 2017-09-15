@@ -12,7 +12,9 @@
   "author": "sanzinken",
   "license": "ISC",
   "dependencies": {
-    "bootstrap-grid": "^2.0.1"
+    "bootstrap-grid": "^2.0.1",
+    "graceful-fs": "^4.1.11",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
     "browser-sync": "latest",
