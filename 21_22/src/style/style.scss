@@ -1,0 +1,146 @@
+body {
+    background: rgb(248, 248, 248);
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.wrapper {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modalOpen {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+h3 {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+}
+
+.testSpace {
+    font-family: 'Droid Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 15.4px;
+    text-align: center;
+    width: 90%;
+    padding: 5%;
+    background-color: rgb(53, 51, 49);
+}
+
+.question {
+    width: auto;
+    padding: 5%;
+    background-color: rgb(224, 224, 224);
+}
+
+label {
+    cursor: pointer;
+}
+
+.question:nth-child(1) {
+    margin-bottom: 3%;
+}
+
+.question:nth-child(2) {
+    margin-bottom: 3%;
+}
+
+.numberQuestion {
+    font-size: 18px;
+    margin-right: 1%;
+}
+
+#button {
+    font-size: 22px;
+    text-align: center;
+    line-height: 45px;
+    color: rgb(247, 242, 243);
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 30px;
+    cursor: pointer;
+    width: 45%;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#db0d0d+0,f49381+100 */
+    background: rgb(112, 112, 112);
+    /* Old browsers */
+    /* Chrome10-25,Safari5.1-6 */
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#db0d0d', endColorstr='#f49381', GradientType=0);
+    /* IE6-9 */
+}
+
+#button:active {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd0000+0,a33535+100 */
+    background: #BBBBBB;
+    /* Old browsers */
+    /* Chrome10-25,Safari5.1-6 */
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dd0000', endColorstr='#a33535', GradientType=0);
+    /* IE6-9 */
+}
+
+#modalBackground {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    left: 0;
+    bottom: 0px;
+    background: rgba(156, 158, 162, 0.71);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.modalDialog {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    background: #FFFFFF;
+}
+
+.modalDialog>p {
+    font-size: 2em;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+    background: #00d9ff;
+}

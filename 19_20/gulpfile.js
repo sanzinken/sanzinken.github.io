@@ -27,7 +27,7 @@ const path = {
   src: { /*Звідси берем вихідні файли*/
     html: 'src/*.html',
     js: 'src/js/**/*.js',
-    style: 'src/style/styles.scss',
+    style: 'src/style/*.scss',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*'
   },
@@ -50,7 +50,7 @@ const config = {
   tunel: true,
   host: "localhost",
   port: 9000,
-  logPrefix: '19_20 FrontEnd'
+  logPrefix: '21_22 FrontEnd'
 }
 /*******************************************************************************/
 //збираємо html

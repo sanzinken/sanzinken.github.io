@@ -3,19 +3,18 @@
 //= ../../bower_components/wow/dist/wow.min.js
 //=  ../../node_modules/lodash/lodash.js
 
-$(document).ready(function(){
+$(document).ready(function() {
   $(".owl-carousel").owlCarousel({
     items: 1,
     loop: true,
     autoplay: true,
     autoplayTimeout: 2000,
-    responsive:{
-      0:{
+    responsive: {
+      0: {
         nav: true,
         dots: false,
         touchDrag: true,
-        navText: ['<i class="fa fa-chevron-left chevrons fa-4x" aria-hidden="true"></i>',
-        '<i class="fa fa-chevron-right chevrons fa-4x" aria-hidden="true"></i>']
+        navText: ['<i class="fa fa-chevron-left chevrons fa-4x" aria-hidden="true"></i>', '<i class="fa fa-chevron-right chevrons fa-4x" aria-hidden="true"></i>']
       },
       1200: {
         nav: false,
@@ -43,7 +42,7 @@ $(document).ready(function(){
     var oldButtonDesc = $('.acco-title.acco-active');
 
     // Make sure the content that needs to be shown isn't already visible
-    if ( currentContent.is(':visible') )
+    if (currentContent.is(':visible'))
       return false;
 
     // Hide the old content
@@ -59,16 +58,17 @@ $(document).ready(function(){
     currentButtonDesc.addClass('acco-active');
   });
 
-  $('.acco-button').mousedown( function() {
+  $('.acco-button').mousedown(function() {
     return false;
   });
-
-
 
   new WOW().init();
 
   /**************************_lodash*****************************/
-  var data = [
+
+});
+
+var data = [
   {
     "guid": "701b29c3-b35d-4cf1-a5f6-8b12b29a5081",
     "index": 0,
@@ -92,17 +92,14 @@ $(document).ready(function(){
     "balance": "$2,811.93",
     "name": "Moore Hensley",
     "skills": [
-      "ea",
-      "ipsum",
-      "Lorem"
+      "ea", "ipsum", "Lorem"
     ],
     "gender": "male",
     "age": 37,
     "greeting": "Hello, Moore Hensley! You have 5 unread messages.",
     "longitude": -10.931599,
     "_id": "56bdc339702f16daa316d2eb"
-  },
-  {
+  }, {
     "guid": "7a3cbd18-57a1-4534-8e12-1caad921bda1",
     "index": 1,
     "favoriteFruit": "banana",
@@ -118,8 +115,7 @@ $(document).ready(function(){
       {
         "id": 0,
         "name": "Briana Decker"
-      },
-      {
+      }, {
         "id": 1,
         "name": "Sharron Pace"
       }
@@ -142,8 +138,7 @@ $(document).ready(function(){
     "greeting": "Hello, Sharlene Bush! You have 2 unread messages.",
     "longitude": 65.625151000000002,
     "_id": "56bdc33986e3357811d1a81e"
-  },
-  {
+  }, {
     "guid": "88beb2f3-e4c2-49f3-a0a0-ecf957a95af3",
     "index": 2,
     "favoriteFruit": "apple",
@@ -159,12 +154,10 @@ $(document).ready(function(){
       {
         "id": 0,
         "name": "Marilyn Mcintosh"
-      },
-      {
+      }, {
         "id": 1,
         "name": "Padilla Garrison"
-      },
-      {
+      }, {
         "id": 2,
         "name": "Naomi Buckner"
       }
@@ -187,8 +180,7 @@ $(document).ready(function(){
     "greeting": "Hello, Ross Vazquez! You have 9 unread messages.",
     "longitude": 139.45094800000001,
     "_id": "56bdc3397558ab111683cfd6"
-  },
-  {
+  }, {
     "guid": "249b6175-5c30-44c6-b154-f120923736f5",
     "index": 3,
     "favoriteFruit": "banana",
@@ -204,8 +196,7 @@ $(document).ready(function(){
       {
         "id": 0,
         "name": "Goldie Gentry"
-      },
-      {
+      }, {
         "id": 1,
         "name": "Aisha Tran"
       }
@@ -215,19 +206,14 @@ $(document).ready(function(){
     "balance": "$2,278.75",
     "name": "Elma Head",
     "skills": [
-      "adipisicing",
-      "irure",
-      "sit",
-      "quis",
-      "velit"
+      "adipisicing", "irure", "sit", "quis", "velit"
     ],
     "gender": "female",
     "age": 21,
     "greeting": "Hello, Elma Head! You have 8 unread messages.",
     "longitude": -131.352147,
     "_id": "56bdc3395273667c0f89b902"
-  },
-  {
+  }, {
     "guid": "334f8cb3-eb04-45e6-abf4-4935dd439b70",
     "index": 4,
     "favoriteFruit": "banana",
@@ -243,8 +229,7 @@ $(document).ready(function(){
       {
         "id": 0,
         "name": "Jordan Sampson"
-      },
-      {
+      }, {
         "id": 1,
         "name": "Eddie Strong"
       }
@@ -254,18 +239,14 @@ $(document).ready(function(){
     "balance": "$3,951.17",
     "name": "Carey Barr",
     "skills": [
-      "ex",
-      "culpa",
-      "nostrud",
-      "et"
+      "ex", "culpa", "nostrud", "et"
     ],
     "gender": "male",
     "age": 27,
     "greeting": "Hello, Carey Barr! You have 4 unread messages.",
     "longitude": -100.85060199999999,
     "_id": "56bdc3398f16bb4615b26c69"
-  },
-  {
+  }, {
     "guid": "150b00fb-dd82-427d-9faf-2879ea87c695",
     "index": 5,
     "favoriteFruit": "apple",
@@ -281,8 +262,7 @@ $(document).ready(function(){
       {
         "id": 0,
         "name": "Jacklyn Lucas"
-      },
-      {
+      }, {
         "id": 1,
         "name": "Linda Chapman"
       }
@@ -292,19 +272,14 @@ $(document).ready(function(){
     "balance": "$1,498.77",
     "name": "Blackburn Dotson",
     "skills": [
-      "non",
-      "do",
-      "non",
-      "amet",
-      "ipsum"
+      "non", "do", "non", "amet", "ipsum"
     ],
     "gender": "male",
     "age": 38,
     "greeting": "Hello, Blackburn Dotson! You have 6 unread messages.",
     "longitude": 32.616394999999997,
     "_id": "56bdc33939066929c893b269"
-  },
-  {
+  }, {
     "guid": "e1bf46ab-7168-491e-925e-f01e21394812",
     "index": 6,
     "favoriteFruit": "strawberry",
@@ -320,8 +295,7 @@ $(document).ready(function(){
       {
         "id": 0,
         "name": "Goldie Gentry"
-      },
-      {
+      }, {
         "id": 1,
         "name": "Briana Decker"
       }
@@ -331,10 +305,7 @@ $(document).ready(function(){
     "balance": "$2,764.03",
     "name": "Sheree Anthony",
     "skills": [
-      "Lorem",
-      "veniam",
-      "excepteur",
-      "culpa"
+      "Lorem", "veniam", "excepteur", "culpa"
     ],
     "gender": "female",
     "age": 39,
@@ -344,44 +315,57 @@ $(document).ready(function(){
   }
 ];
 
-  var skills = _.map(data, function(json) {
-    return json.skills;
+var skills = _.map(data, function(json) {
+  return json.skills;
+})
+
+console.log("<------------1------------>");
+var unsorted = _.uniq(_.flattenDeep(skills));
+
+var unsorted2 = _.map(unsorted, _.capitalize);
+var sortedSkills = unsorted2.sort();
+
+var counter = 1;
+_.forEach(sortedSkills, function(skill) {
+  console.log(counter++ + ". " + skill + '\n');
+
+})
+
+console.log("\n\n<------------2------------>");
+
+var citizens = _.map(data, function(citizen) {
+  var obj = {};
+
+  obj.name = citizen.name;
+  obj.frCounter = citizen.friends.length;
+
+  return obj;
+});
+
+ citizens = _.sortBy(citizens, ['frCounter'] );
+ citizens.reverse();
+ var count = 1;
+_.each(citizens, function(citizen) {
+  console.log(count++ + ". " + citizen.name + " --friends-->" + citizen.frCounter + "\n");
+});
+// console.log(sortByName.toString());
+
+console.log("\n\n<------------3------------>");
+
+var friendsArr = [];
+
+_.each(data, function(json) {
+
+  _.each(json.friends, function(friend) {
+    friendsArr.push(friend.name);
   })
 
+})
 
+var uniqFriends = _.uniq(friendsArr);
 
-  console.log("<------------1------------>");
-  var unsorted = _.uniq(_.flattenDeep(skills));
-
-  var unsorted2 = _.map(unsorted, _.capitalize);
-  var sortedSkills = unsorted2.sort();
-
-  var counter = 1;
-  _.forEach(sortedSkills, function(skill) {
-    console.log(counter++ + ". " + skill + '\n');
-
-  })
-
-  console.log("<------------3------------>");
-
-  var friendsArr = [];
-
-    _.each(data, function(json) {
-
-      _.each(json.friends, function(friend) {
-        friendsArr.push(friend.name);
-    })
-
-  })
-
-
-
-  var uniqFriends = _.uniq(friendsArr);
-
-  var sortedFriends = uniqFriends.sort();
-  var counter3 = 1;
-  _.forEach(sortedFriends, function(friend) {
-    console.log(counter3++ + ". " + friend + '\n');
-  })
-
+var sortedFriends = uniqFriends.sort();
+var counter3 = 1;
+_.forEach(sortedFriends, function(friend) {
+  console.log(counter3++ + ". " + friend + '\n');
 });

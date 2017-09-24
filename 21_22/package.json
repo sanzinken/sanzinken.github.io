@@ -1,0 +1,37 @@
+{
+  "name": "21_22",
+  "version": "1.0.0",
+  "description": "ex 21_22",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "sanzinken.github.io"
+  },
+  "author": "sanzinken",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.10",
+    "jasmine": "^2.8.0",
+    "jshint": "^2.9.5"
+  },
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-connect": "latest",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-imagemin": "latest",
+    "gulp-pug": "^2.0.0",
+    "gulp-rigger": "latest",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemap": "latest",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "latest",
+    "imagemin-pngquant": "latest",
+    "normalize.css": "^7.0.0"
+  }
+}
