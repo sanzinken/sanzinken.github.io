@@ -1,0 +1,42 @@
+{
+    "name": "23_24",
+    "version": "1.0.0",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "sanzinken.github.io"
+    },
+    "author": "sanzinken",
+    "license": "ISC",
+    "dependencies": {
+        "jquery": "^3.2.1",
+        "lodash": "^4.17.4",
+        "requirejs": "latest"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-preset-env": "^1.6.0",
+        "browser-sync": "latest",
+        "debug": "^3.1.0",
+        "global": "^4.3.2",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "latest",
+        "gulp-babel": "^7.0.0",
+        "gulp-clean-css": "latest",
+        "gulp-connect": "latest",
+        "gulp-imagemin": "latest",
+        "gulp-jasmine-browser": "latest",
+        "gulp-rigger": "latest",
+        "gulp-sass": "^3.1.0",
+        "gulp-sourcemap": "latest",
+        "gulp-uglify": "^3.0.0",
+        "gulp-util": "^3.0.8",
+        "gulp-watch": "latest",
+        "imagemin-pngquant": "latest",
+        "jasmine": "latest"
+    },
+    "description": "ex 23_24"
+}

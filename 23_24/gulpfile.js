@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const babel = require('gulp-babel');
 const watch = require('gulp-watch'); // переписує тільки ті файли, в яких відбулися реальні зміни
-const pug = require('gulp-pug'); //pug(exJade)
+//const pug = require('gulp-pug'); //pug(exJade)
 const prefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
@@ -11,6 +11,7 @@ const cssmin = require('gulp-clean-css'); //мініфікація css
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const rimraf = require('rimraf'); //кліннер, коли необхідно очистити якийсь каталог повністю (./build наприклад)
+const jasmineBrowser = require('gulp-jasmine-browser');
 const browserSync = require('browser-sync'); // автоматична перезагрузка сторінки після збірки
 const reload = browserSync.reload;
 /*******************************************************************************/
@@ -31,6 +32,10 @@ const path = {
         fonts: 'src/fonts/**/*.*'
     },
 
+    test: {
+        spec: 'spec/_spec.js'
+    },
+
     watch: { /*Вказуємо зміни яких файлів ми хочемо спостерігати*/
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
@@ -49,7 +54,7 @@ const config = {
         tunel: true,
         host: "localhost",
         port: 9000,
-        logPrefix: '21_22 FrontEnd'
+        logPrefix: '23_24 FrontEnd'
     }
     /*******************************************************************************/
     //збираємо html
@@ -103,6 +108,14 @@ gulp.task('fonts:build', function() {
 gulp.task('clean', function(cb) {
     rimraf(path.clean, cb);
 });
+//Тестимо
+gulp.task('jasmine-test', function() {
+    var jasminePathArr = [path.src.js, path.test.spec]
+    return gulp.src(jasminePathArr)
+        .pipe(watch(jasminePathArr))
+        .pipe(jasmineBrowser.specRunner())
+        .pipe(jasmineBrowser.server({ port: 8888 }))
+});
 
 gulp.task('build', ['html:build', 'js:build', 'styles:build', 'image:build', 'fonts:build']);
 /*************************************************************************************************/
@@ -110,7 +123,6 @@ gulp.task('watch', function() {
     watch([path.watch.html], function(event, cb) {
         gulp.start('html:build')
     });
-    watch([])
     watch([path.watch.js], function(event, cb) {
         gulp.start('js:build')
     });
