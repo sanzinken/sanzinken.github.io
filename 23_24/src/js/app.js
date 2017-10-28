@@ -1,11 +1,21 @@
 requirejs.config = ({
-  baseUrl: 'js/lib',
+    baseUrl: 'js/lib',
+    paths: {
+        'app': '../app',
+    },
+    shim: {
+        jquery: {
+            exports: 'jQuery'
+        },
+        lodash: {
+            exports: '_'
+        }
+    }
 
-  paths: {
-    appController: '../app/controller',
-    appModel: '../app/model',
-    appView: '../app/view'
-    jquery: 'jquery',
-    lodash: 'lodash'
-  }
+});
+
+requirejs(['app/model', 'app/controller', 'app/view'], function(Model, Controller, View) {
+    const model = new Model();
+    const view = new View(model);
+    const controller = new Controller(model, view);
 });

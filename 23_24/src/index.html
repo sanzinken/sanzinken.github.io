@@ -7,17 +7,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ToDo List</title>
     <link rel="stylesheet" href="css/style.css">
-    <script data-main="js/app" src="js/lib/require.js"></script>
+    <script data-main="js/app" src="js/require.js"></script>
 
 </head>
 
 <body>
-  <script type="text/template" id="wrapper-template">
-    
-  </script>
-  <script type="text/template" id="todoList-template">
+    <script type="text/template" id="todolist-template">
+        <div class="wrapper">
+            <ul class="todo-list">
+            </ul>
 
-  </script>
+            <div class="input-container">
+                <input type="text" value="Type ToDo task here..." onfocus="this.value = ''" onblur="this.value='Type ToDo task here...'" id="todo-input" class="shadowing todo-decor">
+            </div>
+        </div>
+    </script>
+
+    <script type="text/template" id="todo-task-template">
+        <% _.forEach(dataStorage, function(data) {%>
+            <li class="todo-task">
+
+                <div class="todo-button-container">
+                    <%if (data.isChecked) {%>
+                        <div class="todo-button todo-button__check checked"></div>
+                        <%else {%>
+                            <div class="todo-button todo-button__check"></div>
+                            <%}%>
+                </div>
+
+                <p class="todo-descr-text todo-decor">
+                    <%-data.toDo%>
+                </p>
+
+                <div class="todo-button-container">
+                    <div class="todo-button todo-butoon__remove"></div>
+                </div>
+
+            </li>
+            <%});%>
+    </script>
+
+
 </body>
 
 </html>
