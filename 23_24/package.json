@@ -21,6 +21,7 @@
         "babel-preset-env": "^1.6.0",
         "browser-sync": "latest",
         "debug": "^3.1.0",
+        "eslint": "^4.9.0",
         "global": "^4.3.2",
         "gulp": "^3.9.1",
         "gulp-autoprefixer": "latest",
@@ -36,7 +37,8 @@
         "gulp-util": "^3.0.8",
         "gulp-watch": "latest",
         "imagemin-pngquant": "latest",
-        "jasmine": "latest"
+        "jasmine": "latest",
+        "sass-lint": "^1.12.1"
     },
     "description": "ex 23_24"
 }
