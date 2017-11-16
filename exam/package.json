@@ -1,0 +1,37 @@
+{
+    "name": "exam",
+    "version": "1.0.0",
+    "main": "index.html",
+    "license": "MIT",
+    "dependencies": {
+        "jquery": "^3.2.1",
+        "reset-css": "^2.2.1"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-preset-env": "^1.6.0",
+        "browser-sync": "latest",
+        "debug": "^3.1.0",
+        "eslint": "^4.9.0",
+        "global": "^4.3.2",
+        "gulp": "latest",
+        "gulp-autoprefixer": "latest",
+        "gulp-babel": "latest",
+        "gulp-clean-css": "latest",
+        "gulp-connect": "latest",
+        "gulp-if": "^2.0.2",
+        "gulp-imagemin": "latest",
+        "gulp-plumber": "^1.1.0",
+        "gulp-postcss": "^7.0.0",
+        "gulp-pug": "^3.3.0",
+        "gulp-rigger": "latest",
+        "gulp-sourcemap": "latest",
+        "gulp-stylus": "^2.6.0",
+        "gulp-uglify": "^3.0.0",
+        "gulp-watch": "latest",
+        "imagemin-pngquant": "latest",
+        "jasmine": "latest",
+        "jshint": "latest",
+        "pug": "^2.0.0-rc.4"
+    }
+}
