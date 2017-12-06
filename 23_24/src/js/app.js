@@ -2,10 +2,11 @@ requirejs.config = ({
     baseUrl: 'js/lib',
     paths: {
         'app': '../app',
+        'jquery': 'jquery'
     },
     shim: {
         jquery: {
-            exports: 'jQuery'
+            exports: '$'
         },
         lodash: {
             exports: '_'
