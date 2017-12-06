@@ -1,12 +1,43 @@
 doctype html
-include includes/head.pug
+include includes/head
 body
-  header
+  header.header
     .main-content-wrapper
-      .login-panel
-        h2.logo.logo_main URLAUBSGLÜCK
-        .signin_panel
-          .button.button_plain Log in
-          .button.button_bordered Sign up
+      .login-panel.clearfix
+        h2.brandname.brandname_main URLAUBSGLÜCK
+        .signin_panel.clearfix
+          .button.button_plain.button_inline.button_login Log in
+          .button.button_bordered.button_inline Sign up
+      .logo
+        h1.slogan 
+          span share your 
+          span holiday dreams
+        h3.second-slogan And find the perfect partner to fullfill it
+        .button.button_red Find your holiday partner
+  main.main
+    .main-content-wrapper
+      section.sliders-block.topic-section
+        h3(align="center").topic How Urlaubsglück works?             
+        section.sliders
+          include includes/variables
+            each slider in sliderItemsContent
+              section.sliders__item
+                .item-inner.ratio-4-3
+                  .item-content
+                    .item__slider
+                      each item in slider.imgLnk
+                        img.img(src=`${item}`, alt="slImg")
+                    h5.item__step= slider.step
+                    h3.itep__topic= slider.topic
+                    p.item__textCont= slider.textCont
 
-
+                    
+                  
+      section.partners-block.topic-section
+        h3(align="center").topic Meet a partner for your best holiday
+      section.masonry-block.topic-section
+        h3(align="center").topic Discover holiday activity ideas
+      section.search-block.topic-section
+        h3(align="center").topic Discover holiday activity ideas
+  footer.footer
+    .main-content-wrapper 

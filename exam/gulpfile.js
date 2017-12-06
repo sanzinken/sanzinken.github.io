@@ -52,33 +52,34 @@ const path = {
 };
 /*******************************************************************************/
 const config = {
-        server: {
-            baseDir: "./build"
-        },
-        tunel: true,
-        host: "localhost",
-        port: 9000,
-        logPrefix: '23_24 FrontEnd'
-    }
-    /*******************************************************************************/
-    //*****************Compile *.pug files******************************************/
-gulp.task('compile:pug', function buildHTML() {
+    server: {
+        baseDir: "./build"
+    },
+    tunel: true,
+    host: "localhost",
+    port: 9000,
+    logPrefix: 'GulpServerBrowserSync'
+}
+
+/*******************************************************************************/
+//*****************Compile *.pug files******************************************/
+gulp.task('pug:compile', function buildHTML() {
     return gulp.src(path.src.pug)
         .pipe(plumber())
         .pipe(pug({
             pretty: true,
             verbose: true
         }))
-        .pipe(gulp.dest('./src/'));
+        .pipe(gulp.dest('./build/'));
 });
 
 //збираємо html
-gulp.task('html:build', ['compile:pug'], function() {
-    return gulp.src(path.src.html)
-        .pipe(rigger())
-        .pipe(gulp.dest(path.build.html))
-        .pipe(reload({ stream: true }))
-});
+//gulp.task('html:build', ['pug:compile'], function() {
+//    return gulp.src(path.src.html)
+//        .pipe(rigger())
+//        .pipe(gulp.dest(path.build.html))
+//        .pipe(reload({ stream: true }))
+//});
 
 
 gulp.task('js:build', function() {
@@ -105,10 +106,6 @@ gulp.task('styles:build', function() {
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({ stream: true }));
 });
-// gulp.task('stylus', function() {
-//     return gulp
-//         .src(path.build.)
-// });
 //збираємо img
 gulp.task('image:build', function() {
     gulp.src(path.src.img)
@@ -130,15 +127,15 @@ gulp.task('fonts:build', function() {
 gulp.task('clean', function(cb) {
     rimraf(path.clean, cb);
 });
-gulp.task('build', ['html:build', 'js:build', 'styles:build', 'image:build', 'fonts:build']);
+gulp.task('build', ['pug:compile', 'js:build', 'styles:build', 'image:build', 'fonts:build']);
 /*************************************************************************************************/
 gulp.task('watch', function() {
     watch([path.src.pug], function(event, cb) {
-        gulp.start('compile:pug')
+        gulp.start('pug:compile')
     });
-    watch([path.watch.html], function(event, cb) {
-        gulp.start('html:build')
-    });
+    // watch([path.watch.html], function(event, cb) {
+    //     gulp.start('html:build')
+    // });
     watch([path.watch.js], function(event, cb) {
         gulp.start('js:build')
     });
@@ -154,7 +151,7 @@ gulp.task('watch', function() {
 });
 /**************************BROWSERSYNC****************************/
 gulp.task('webserver', function() {
-        browserSync(config);
-    })
-    /****************************DEFAULT*****************************/
+    browserSync(config);
+});
+/****************************DEFAULT*****************************/
 gulp.task('default', ['build', 'webserver', 'watch']);

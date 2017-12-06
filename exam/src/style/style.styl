@@ -1,24 +1,131 @@
 
 @require './reset.css'
 @require 'variables.styl'
+@require '../../node_modules/slick-carousel/slick/slick.css'
+@require '../../node_modules/slick-carousel/slick/slick-theme.css'
 @require 'fonts.styl'
 @require 'stylesForDevices/minWidth1440px.styl'
 @require 'stylesForDevices/768pxTo1399px.styl'
-@require 'stylesForDevices/320pxTo767.styl'
+@require 'stylesForDevices/320pxTo767px.styl'
 @require 'stylesForDevices/maxWidth320px.styl'
 
+.clearfix:after
+  clear both
+  content""
+  display block
+
 body
-    font-size: 14px
+    font-size: mainFont
 
-.logo
-    font-family: Montserrat 
+    /********************************--HEADER--************************************/
 
-.logo_main 
-    font-size: 1.428571429em
-    font-weight: bold
-    color: white
+.brandname
+    font-family: Montserrat
+
+.login-panel
+  padding-bottom 15.35%
+
+.signin_panel
+  float right
+  width 270px
 
 .button
-    font-family: Montserrat
-    font-size 1em
+    font-family: Montserrat-Bold
+    font-size 1.1em
     color white
+    line-height 1em
+    height 100%
+
+.button:hover
+    cursor pointer
+
+.button_bordered
+  border 3px solid white
+  padding 4.8% 8.2%
+  border-radius 30px
+  display inline-block
+  margin-left 20px
+
+  &:hover
+    box-shadow: 0 0px 28px rgba(255,255,255,0.25), 0 0px 10px rgba(255,255,255,0.22)
+
+.button_inline
+  display inline-block
+
+.button_login
+  margin-left 25%
+  &:hover
+    text-shadow: 0 0px 28px rgba(255,255,255,0.45), 0 0px 10px rgba(255,255,255,0.42)
+
+.logo
+  margin 0 auto
+  width 55%
+  text-align center
+
+  h1.slogan
+    font-family Roboto-Bold
+    color white
+    text-transform uppercase
+    font-size (68/mainFont)em
+    font-weight bold
+    letter-spacing 0.07em
+    padding-bottom 0.45em
+
+  h1 span:nth-child(2)
+    line-height 1.43em
+
+
+  h3.second-slogan
+    font-family Roboto
+    color white
+    font-size 1.78em
+    letter-spacing 0.0324em
+    word-spacing 0.003em
+    margin-bottom 7.4%
+
+  .button_red
+    width 270px
+    margin 0 auto
+    padding 0.98em
+    letter-spacing 0.02em
+    background-color buttonRed
+    border-radius 230px
+
+main
+  content "test"
+
+.topic
+  text-align center
+  width 60%
+  font-family Montserrat-Bold
+  font-size 1.85em
+  margin 0 auto
+  letter-spacing -0.015em
+  word-spacing -0.02em
+
+.topic-section
+  padding-bottom: 16.3%
+  
+.sliders
+  display flex
+  padding-top 4%
+  justify-content space-between
+
+.sliders__item
+  width 31.85%
+  background #ccc
+.item-inner
+  position relative
+  height: 0
+  border 0
+
+.item-content
+  position absolute
+  top 0
+  bottom 0
+  right 0
+  left 0
+
+.ratio-4-3
+  padding-bottom: 133.3333333%
+
