@@ -1,8 +1,8 @@
 
 @require './reset.css'
 @require 'variables.styl'
-@require '../../node_modules/slick-carousel/slick/slick.css'
-@require '../../node_modules/slick-carousel/slick/slick-theme.css'
+@require './slick.css'
+@require './slick-theme.css'
 @require 'fonts.styl'
 @require 'stylesForDevices/minWidth1440px.styl'
 @require 'stylesForDevices/768pxTo1399px.styl'
@@ -16,6 +16,9 @@
 
 body
     font-size: mainFont
+/***delete dotted border outline button*/
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
 
     /********************************--HEADER--************************************/
 
@@ -128,4 +131,55 @@ main
 
 .ratio-4-3
   padding-bottom: 133.3333333%
+
+.slick-prev
+  left: 7%
+  background: url('../img/arrow_slider.png') 0 0 no-repeat !important 
+
+
+.slick-next
+  right 7%
+  background: url('../img/arrow_slider.png') -39px 0 no-repeat !important
+
+.slick-arrow
+
+  
+.slick-prev, .slick-next
+  z-index: 1500
+  width 35px
+  height 60px
+  border none 
+  outline none 
+
+.slick-prev:before, .slick-next:before
+  color buttonRed
+  content: ''
+
+.stick-prev::-moz-focus-inner
+  border: 0 
+
+.item__textwrap
+  position absolute
+  bottom 4.5%
+  padding 0 5.6%
+
+.item__step
+  font: 1.0em Montserrat 
+  color: white
+  background-color: buttonRed 
+  width 25%
+  padding 0.7%
+  border-radius: 20px
+  margin-bottom: 6%
+  margin-left: 1%
+
+.item__topic
+  font: 1.9em Montserrat-Bold
+  color white
+  margin-bottom 5%
+  
+.item__textCont
+  font: 1.1em Roboto-Light
+  color white
+  line-height: 1.2em
 

@@ -27,9 +27,10 @@ body
                     .item__slider
                       each item in slider.imgLnk
                         img.img(src=`${item}`, alt="slImg")
-                    h5.item__step= slider.step
-                    h3.itep__topic= slider.topic
-                    p.item__textCont= slider.textCont
+                    .item__textwrap
+                      h5(align="center").item__step= slider.step
+                      h3.item__topic= slider.topic
+                      p.item__textCont= slider.textCont
 
                     
                   
