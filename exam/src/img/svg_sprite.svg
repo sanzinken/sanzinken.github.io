@@ -2,9 +2,9 @@
     <defs>
       <style>
       .cls-1 {
-        fill: red;
+        fill: #ccc;
         fill-rule: evenodd;
-        display: none;
+        display:none;
       }
       .cls-1:target {display: inline}
       </style>
