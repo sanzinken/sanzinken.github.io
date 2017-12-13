@@ -31,11 +31,13 @@ body
                       h5(align="center").item__step= slider.step
                       h3.item__topic= slider.topic
                       p.item__textCont= slider.textCont
-
-                    
-                  
+      include ../img/sprite.svg 
+      svg(class='sprite-icon')
+        use(xlink:href='#paperplaine-ico')         
       section.partners-block.topic-section
         h3(align="center").topic Meet a partner for your best holiday
+        .partners
+          
       section.masonry-block.topic-section
         h3(align="center").topic Discover holiday activity ideas
       section.search-block.topic-section
