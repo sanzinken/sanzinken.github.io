@@ -33,9 +33,15 @@ body
                       p.item__textCont= slider.textCont             
       section.partners-block.topic-section
         h3(align="center").topic Meet a partner for your best holiday
-        .partners
-          .partner
-            .svg-icon.svg-icon-paperplane
+        section.partners
+          each partner in partners
+            .partner
+              .partner-picture
+                img.photo(src=`${partner.img}` alt=`${partner.name}`)
+                .icon
+                  div(class='svg-icon '+`${partner.svgClass}`)
+              p.partner-name= partner.name
+              p.parner-slogan= partner.slogan
       section.masonry-block.topic-section
         h3(align="center").topic Discover holiday activity ideas
       section.search-block.topic-section
