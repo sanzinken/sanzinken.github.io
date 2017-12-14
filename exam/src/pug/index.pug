@@ -13,7 +13,7 @@ body
           span share your 
           span holiday dreams
         h3.second-slogan And find the perfect partner to fullfill it
-        .button.button_red Find your holiday partner
+        a(class='button button_red' href='#') Find your holiday partner
   main.main
     .main-content-wrapper
       section.sliders-block.topic-section
@@ -39,9 +39,11 @@ body
               .partner-picture
                 img.photo(src=`${partner.img}` alt=`${partner.name}`)
                 .icon
-                  div(class='svg-icon '+`${partner.svgClass}`)
+                  .svg-container
+                    div(class='svg-icon '+`${partner.svgClass}`)
               p.partner-name= partner.name
-              p.parner-slogan= partner.slogan
+              p.partner-slogan= partner.slogan
+        a(class='button button-white-red' href='#') See other partners
       section.masonry-block.topic-section
         h3(align="center").topic Discover holiday activity ideas
       section.search-block.topic-section

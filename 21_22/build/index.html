@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LocalStorage JSON</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper ">
+        <h3>Testing system</h3>
+
+        <div class="testSpace">
+
+            <script id="handlebars-template" type="text/x-handlebars-template">
+                {{#each questions}}
+                <div class="question">
+                    <h4 class="title"><span class="numberQuestion">{{ind @index}}</span>{{question}}</h4>
+                    <div class="answers">
+                        {{#each this.answers}}
+                        <p>
+                            <label><input type="radio" name="answer{{ind @../index}}" class="answer" value="{{ind @index}}"><span>{{ind @index}}. {{this}}</span></label>
+                        </p>
+                        {{/each}}
+                    </div>
+                </div>
+                {{/each}}
+            </script>
+
+        </div>
+        <div id="button">check</div>
+    </div>
+
+    <div id="modalBackground">
+        <div class="modalDialog">
+            <a href="" class="close">x</a>
+            <p class="modalMessage"></p>
+            <div class="okButton"></div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
