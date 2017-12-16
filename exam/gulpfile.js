@@ -30,7 +30,7 @@ const path = {
         pug: 'src/pug/*.pug',
         html: 'src/*.html',
         js: 'src/js/**/*.js',
-        style: 'src/style/style.styl',
+        style: 'src/style/*.styl',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
