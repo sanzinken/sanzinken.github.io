@@ -14,7 +14,7 @@ const cssmin = require('gulp-clean-css'); //мініфікація css
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const rimraf = require('rimraf'); //кліннер, коли необхідно очистити якийсь каталог повністю (./build наприклад)
-const browserSync = require('browser-sync'); // автоматична перезагрузка сторінки після збірки
+const browserSync = require('browser-sync').create(); // автоматична перезагрузка сторінки  після збірки / вебсервер
 const reload = browserSync.reload;
 /*******************************************************************************/
 const path = {
@@ -53,12 +53,23 @@ const path = {
 /*******************************************************************************/
 const config = {
     server: {
-        baseDir: "./build"
+        baseDir: "./build",
+        cors: true,
+        notify: false,
+        // directory: true,
+        middleware: function(req, res, next) {
+            res.setHeader('Access-Control-Allow-Origin', '*');
+            res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT');
+            res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+            res.setHeader('Access-Control-Allow-Credentials', true);
+            next();
+        }
     },
     tunel: true,
     host: "localhost",
     port: 9000,
-    logPrefix: 'GulpServerBrowserSync'
+    logPrefix: 'GulpServerBrowserSync',
+    browser: ["google chrome", "firefox"]
 }
 
 /*******************************************************************************/
@@ -151,7 +162,7 @@ gulp.task('watch', function() {
 });
 /**************************BROWSERSYNC****************************/
 gulp.task('webserver', function() {
-    browserSync(config);
+    browserSync.init(config);
 });
 /****************************DEFAULT*****************************/
 gulp.task('default', ['build', 'webserver', 'watch']);

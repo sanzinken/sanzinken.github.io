@@ -46,6 +46,17 @@ body
         a(class='button button-white-red partners-button' href='#') See other partners
       section.masonry-block.topic-section
         h3(align="center").topic Discover holiday activity ideas
+        section.masonry-gallery
+          .masonry-grid
+            .grid_sizer
+            each gridItem in grid
+              if gridItem.itemRelativeWidth == 2
+                .grid_item.grid_item--width2
+                  img(src=`${gridItem.imgSrc}` alt='masonryImg.jpg')
+              else
+                .grid_item.grid_item--width1
+                  img(src=`${gridItem.imgSrc}` alt='masonryImg.jpg')
+                  
       section.search-block.topic-section
         h3(align="center").topic Discover holiday activity ideas
   footer.footer
