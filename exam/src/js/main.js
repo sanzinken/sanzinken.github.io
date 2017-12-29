@@ -27,17 +27,19 @@ $(document).ready(function() {
     //         percentPosition: true
     //     });
     // });
-    var grid = $('.masonry-grid');
-    grid.imagesLoaded(function() {
-        grid.masonry({
-            // set itemSelector so .grid-sizer is not used in layout
-            itemSelector: '.grid-item',
-            columnWidth: '.grid_sizer',
-            gutter: 10,
-            percentPosition: true,
-        });
+    var $grid = $('.masonry-grid');
+    $grid.masonry({
+        // set itemSelector so .grid-sizer is not used in layout
+        itemSelector: '.grid-item',
+        columnWidth: '.grid_sizer',
+        gutter: 10,
+        percentPosition: true
+    });
 
-        $('.grid_item').imagefill();
+    $('.grid_item').imagefill();
+
+    $grid.imagesLoaded().progress(function() {
+        $grid.masonry('layout');
     });
 
     // 
