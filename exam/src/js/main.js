@@ -29,11 +29,10 @@ $(document).ready(function() {
     // });
     var $grid = $('.masonry-grid');
     $grid.masonry({
-        // set itemSelector so .grid-sizer is not used in layout
-        itemSelector: '.grid-item',
-        columnWidth: '.grid_sizer',
-        gutter: 10,
-        percentPosition: true
+        itemSelector: '.grid_item',
+        // columnWidth: 33,
+        // percentPosition: true,
+        gutter: 10
     });
 
     $('.grid_item').imagefill();
@@ -41,6 +40,4 @@ $(document).ready(function() {
     $grid.imagesLoaded().progress(function() {
         $grid.masonry('layout');
     });
-
-    // 
 });

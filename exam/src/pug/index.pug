@@ -48,7 +48,8 @@ body
         h3(align="center").topic Discover holiday activity ideas
         section.masonry-gallery
           .masonry-grid
-            .grid_sizer
+            //- .grid_sizer &nbsp;
+            .gutter_sizer           
             each gridItem in grid
               if gridItem.itemRelativeWidth == 2
                 .grid_item.grid_item--width2
@@ -59,5 +60,9 @@ body
                   
       section.search-block.topic-section
         h3(align="center").topic Discover holiday activity ideas
+        p.search-block_text Hi! What are your holiday interest
+        form(action="#", method="get" class="search-block_form")
+          input(type="search", name="partner-search" class="input-search")
+          input(type="submit", value="Search partner" class="button button_red")
   footer.footer
     .main-content-wrapper 
