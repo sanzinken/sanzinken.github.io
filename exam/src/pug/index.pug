@@ -62,7 +62,23 @@ body
         h3(align="center").topic Discover holiday activity ideas
         p.search-block_text Hi! What are your holiday interest
         form(action="#", method="get" class="search-block_form")
-          input(type="search", name="partner-search" class="input-search")
-          input(type="submit", value="Search partner" class="button button_red")
+          input(type="search", name="partner-search" class="input-search" placeholder="Enter your interests")
+          input(type="submit", value="Search partner" class="button button_red button_red--search")
+  .bottom-line
   footer.footer
-    .main-content-wrapper 
+    .main-content-wrapper.clearfix 
+      .footer-leftblock.footer-block
+        h2.brandname.brandname_main.brandname--red.footer-brandname URLAUBSGLÜCK
+        .footer-leftblock-contacts
+          h3.contacts.footer-headers Contacts
+          ul.footer-contacts-list
+            li.contacts-item About
+            li.contacts-item Contacts
+            li.contacts-item Press
+            li.contacts-item Blog
+        .footer-leftblock-partners
+          h3.footer-partners.footer-headers Partners
+      .footer-rightblock.footer-block
+        .footer-logo
+          p.footer-logo-text designed by
+          img(src='img/logo.svg' alt='logo.svg' style="width=100%; height=auto;")
