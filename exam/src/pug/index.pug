@@ -4,14 +4,14 @@ body
   header.header
     .main-content-wrapper
       .login-panel.clearfix
-        h2.brandname.brandname_main URLAUBSGLÜCK
         .signin_panel.clearfix
           .button.button_plain.button_inline.button_login Log in
           .button.button_bordered.button_inline Sign up
+        h2.brandname.brandname_main URLAUBSGLÜCK
       .logo
-        h1.slogan 
-          span share your 
-          span holiday dreams
+        h1.slogan share your holiday dreams
+          //- span share your 
+          //- span holiday dreams
         h3.second-slogan And find the perfect partner to fullfill it
         a(class='button button_red' href='#') Find your holiday partner
   main.main
@@ -33,19 +33,50 @@ body
                       p.item__textCont= slider.textCont             
       section.partners-block.topic-section
         h3(align="center").topic Meet a partner for your best holiday
+        
         section.partners
-          each partner in partners
+          .partners-column
             .partner
               .partner-picture
-                img.photo(src=`${partner.img}` alt=`${partner.name}`)
+                img.photo(src=`img/face-1.jpg` alt=`img/face-1.jpg'`)
                 .icon
                   .svg-container
-                    div(class='svg-icon '+`${partner.svgClass}`)
-              p.partner-name= partner.name
-              p.partner-slogan= partner.slogan
+                    div(class='svg-icon svg-icon-tv')
+              p.partner-name Bradley Hunter
+              p.partner-slogan Based in Chicago. I love playing tennis and loud music.
+
+            .partner
+              .partner-picture
+                img.photo(src=`img/face-2.jpg` alt=`img/face-2.jpg`)
+                .icon
+                  .svg-container
+                    div(class='svg-icon svg-icon-cup')
+              p.partner-name Heather Walker
+              p.partner-slogan I'm a happy person that loves cats and climbing on mountains.
+
+          .partners-column
+            .partner
+              .partner-picture
+                img.photo(src=`img/face-3.jpg` alt=`img/face-3.jpg`)
+                .icon
+                  .svg-container
+                    div(class='svg-icon svg-icon-colb')
+              p.partner-name Lucas Marsha
+              p.partner-slogan I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.
+            
+            .partner
+              .partner-picture
+                img.photo(src=`img/face-4.jpg` alt=`img/face-4.jpg`)
+                .icon
+                  .svg-container
+                    div(class='svg-icon svg-icon-paperplane')
+              p.partner-name Breadle Hunter
+              p.partner-slogan Based in Chicago. I love playing tennis and loud music.
+
         a(class='button button-white-red partners-button' href='#') See other partners
       section.masonry-block.topic-section
         h3(align="center").topic Discover holiday activity ideas
+        
         section.masonry-gallery
           .masonry-grid
             //- .grid_sizer &nbsp;

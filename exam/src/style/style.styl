@@ -4,10 +4,7 @@
 @require './libraries/slick.css'
 @require './libraries/slick-theme.css'
 @require 'fonts.styl'
-@require 'stylesForDevices/minWidth1440px.styl'
-@require 'stylesForDevices/768pxTo1399px.styl'
-@require 'stylesForDevices/320pxTo767px.styl'
-@require 'stylesForDevices/maxWidth320px.styl'
+
 
 .clearfix:after
   clear both
@@ -22,9 +19,26 @@ body
 
     /********************************--HEADER--************************************/
 
+.header 
+    padding-top: 2.6%;
+    padding-bottom: 16.3%;
+    width: 100%;
+    background-image: url('../img/HeaderCover.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 6.6%;
+
 .brandname
     font-family: Montserrat
     color white
+
+.brandname_main 
+  font-size: 1.428571429em;
+  font-weight: bold;
+  letter-spacing: 0.11em;
+  line-height: 1.428571429em;
+  display: inline-block
+  float: left
 
 .brandname--red
   color: buttonRed 
@@ -34,7 +48,8 @@ body
 
 .signin_panel
   float right
-  width 270px
+  display: inline-block
+  width: 270px
 
 .button
   display: block
@@ -83,7 +98,7 @@ body
   width 55%
   text-align center
 
-  h1.slogan
+  .slogan
     font-family Roboto-Bold
     color white
     text-transform uppercase
@@ -94,6 +109,7 @@ body
 
   h1 span:nth-child(2)
     line-height 1.43em
+    
 
 
   h3.second-slogan
@@ -199,18 +215,24 @@ main.main
   font: 1.1em Roboto-Light
   color white
   line-height: 1.2em
+
 .partners
   display: flex
   flex-wrap: nowrap
   justify-content: space-around
   margin-bottom 5.8%
 
+.partners-column
+  display: inline-flex
+  width 50%
+  justify-content: space-around
+
 .partner
   display flex
   flex-direction: column
   align-items center
   align-content: flex-start
-  width 20.0%
+  width 50%
   padding-top 4.5%
   &:first-child .icon
     background-color: #ff4e50
@@ -353,9 +375,12 @@ main.main
   font-family: "Montserrat-Bold"
   font-size: (10/16)em
   text-transform: uppercase
-  width: 23%
   margin-left: 35px
   color: #cccccc
   margin-bottom 10px
 
 
+@require 'stylesForDevices/minWidth1440px.styl'
+@require 'stylesForDevices/768pxTo1399px.styl'
+@require 'stylesForDevices/320pxTo767px.styl'
+@require 'stylesForDevices/max320px.styl'
