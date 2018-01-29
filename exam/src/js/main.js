@@ -4,11 +4,24 @@ $(document).ready(function() {
         adaptiveHeight: true,
         autoplay: true,
         responsive: [{
-            breakpoint: 320,
-            settings: {
-                arrows: false
+                breakpoint: 1440,
+                settings: {
+                    arrows: true
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: true
+                }
+            },
+            {
+                breakpoint: 320,
+                settings: {
+                    arrows: false
+                }
             }
-        }]
+        ]
     });
 
     // var xhr = new XMLHttpRequest();
